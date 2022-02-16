@@ -1,0 +1,14 @@
+  
+      1) Le verset	   
+                <span class="textSource">&#8718;&nbsp; �...� (7)</span><br>
+
+       2) Son d�coupage	   
+               <span class="bld"> ...: </span>... <br> 
+               <span class="bld"> ...: </span>... <br> 
+
+       3) Son vocabulaire(et sa phonetique):
+               <small>&#128270; </small>  <span class="textSourceNormal">phon�tique(text arabe)</span> : ... <br> 
+              <small>&#128270; </small>  <span class="textSourceNormal">phon�tique(texte arabe)</span> :  ... <br>
+
+       4) Et enfin l'interpretation(tafsir)
+             ...

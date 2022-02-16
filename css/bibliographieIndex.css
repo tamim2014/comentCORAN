@@ -1,0 +1,64 @@
+/* 
+ *  03.02.2022
+ * Indexation de la bibliographie : par un dropdown-subnav 
+ *
+ */
+ 
+ 		.dropdown-content{
+			width:100%; 
+            left:0;
+            z-index:3;
+            padding-left:12%;
+            box-shadow:none; /* 0px 1px 2px 0px #ccf; */
+            overflow-x: hidden !important; 
+		    overflow-y: hidden !important;			
+		}
+		
+		.topnav .dropdown-content a{  float:left;  	}	    
+		.topnav .dropdown-content a:hover{  background: #33a198; color:gold;	}	    
+		.dropdown-btn { float:none; }
+	    .dropdown-btn:hover{ background: #123; color:#ccc !important; } 
+		
+	
+		
+		/* .topnav .dropdown-content a:not(:first-child) {padding:1.5em 1em;  font-size:15px; font-family:serif; border-bottom:1px solid #333; color:#cca;} */
+		.topnav .dropdown-content a { 
+		              padding:.5em 2.5em !important;  
+					  font-size:15px; 
+					  font-family:serif; 
+					  border-bottom:none; 
+					  color:#cca;
+		}
+		.topnav .dropdown-content a:first-child{border-bottom:1px solid #333;  }
+		/* 
+		 * SANS LIGNE DE SEPARATION( entre le dropbtn2 et le dropdown-content2)
+		 * .topnav .dropdown-content a:first-child:hover{border-bottom:2px solid black ; }
+		 *
+		 * AVEC LIGNE DE SEPARATION( entre le dropbtn2 et le dropdown-content2)
+         */
+		.topnav .dropdown-content .dropdown2 .dropbtn2:hover{border-bottom:2px solid black ; }
+		
+		
+		
+		
+		/* ---------------------------------------------------------------
+		 *
+		 *PANEL NOIR
+		 *
+		 * Le garder ou le virer ?
+		 * Je sais pas ...
+		 *
+		 * SI ON VEUT VIRER LE PANEL NOIR: on applique ce bloc de code 
+		 * SI ON VEUT LE GARDER : mettre ce bloc de code en commentaire
+		 *
+		 */
+		 
+		.topnav .dropdown-content { background: transparent; }
+		.dropdown-btn .dropdown-content a{ background: red !important;}
+		.topnav .dropdown-content a:first-child{border-bottom:none;  }
+		.topnav .dropdown-content a:first-child:hover{border-bottom:none; }
+		.dropdown-btn:hover{ background:#123; }
+		.dropbtn2 { background: #123; }
+		.topnav .dropdown-content a { padding:.3em 2.601em  .3em 2.601em !important;  }
+		.dropdown-content2 { min-height: auto !important ; padding-bottom:.5em; }
+		

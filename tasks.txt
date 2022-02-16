@@ -1,0 +1,69 @@
+
+Question sur l'oeil de la certitude(s102 JJ).
+
+
+> joindre le documentaire(video 2019 ou 2020 je c pa)
+ >découpage( extraire les partie concernant le verset7)  et montage
+
+---------------------------
+blem: height timeLine sur chrome ?
+solution1? -webkit-margin-before ( pour assigner un margin-top spécifique aux browse chrom)
+_______________________________________________
+
+Structrues de la bibliographie( inscrire ce sommaire dans le ndreda footer - avec des annotations redirgées vers les séquences cibles -  INCHA ALLAH )
+1) LES COMPAGNONS ECRIVAINS
+ 2) LES 4 IMAM DES 4 ECOLES JURIDIQUES
+ 3) LES 2 PRINCIPAUX REFERENCES DE LA SUNNAT
+4) LES 2 EXEGES LES PPLUS CONNUES
+
+
+
+################ 1) Swahaba: LES COMPAGNONS ECRIVAINS ###############################
+
+601: Abou Houraira(compagnon du Prophète).............OK 
+612: Anas Ibn Malik(compagnon du Prophète).............OK
+619:Ibn Abbas (compagnon du Prophète).....................OK
+~619:Ibn Massound  (compagnon du Prophète)...........OK
+
+################ 2) Imams: LES 4 IMAM DES 4 ECOLES JURIDIQUES ######################## 
+
+699: Abou Hanifa ou Imam 	Abou Hanifa( étudiant de Anas - tabioun) .......... OK
+~711:  Malik ibn Anas ou Imam Malik( étudiant de ??? ) .......... OK
+767:Ash-Shâfi'î  ou Imam Shafi( étudiant de Imam Malik  )..................OK
+780: Ahmad Ibn Hanbal* ou Imam Hambal( étudiant Ash-Shâfi'î ) ......OK
+
+################# 3) Muhadith: LES 2 PRINCIPAUX REFERENCES DE LA SUNNAT##################
+
+810: Mouhammad al-Boukhari( étudiant de Hanbal)..............OK
+821: Muslim ibn al-Hajjaj(étudiant de Hanbal et Bouhari)..........OK
+824: Ibn Majah .........................OK
+1233: Nawawi (  https://fr.wikipedia.org/wiki/Al-Nawawi  ) ......
+
+
+################4) Mufassir: LES 2 EXEGES LES PPLUS CONNUES#####################
+
+1301: Ibn Kathir .........................OK
+1459 et 1501: les djalaleine  >> Resumer les 2 Djaleleine dans le mm cadre ................
+
+Attention! N'AJOUTEZ PERSONNE D'AUTRE SINON ON EN FINI PAS
+                 SURTOUT PAS DE MOUFASIR( rester sur ibn Kathir et les Djalaleines. c'est tout.
+
+Beref : 15 savants un point c'est tout.
+           (  il y des gens comme askalani mais un lien de redirection vers wiki fera le tout)
+_____________________
+5) Une petite introduction s'impose pour présenter l' articulation de la bibliographie(sahaba, imam, muhadith, mufassir)
+mais je sais pas où la placer
+6) Sinon utiliser un code couleur: des btn de mm couleur( à peu de nuance près) sur le hoverable de droite
+   ce, afin de facilement distinguer les 4 catégorie par le couleur des btn
+
+INCHA ALLÃH
+
+
+Remarque*
+L'imam Hanbal fut un intellectuel  aux méthodes presque modernes: 
+On doit à ses disciples, dont l'un de ses fils, 'Abdullâh (mort en 903),
+ une compilation des réponses qu'il donnait aux questions qui lui étaient posées
+ sur les sujets les plus divers.
+______________________________
+
+le Coran: Sacrée parole verbatim de DIEU.

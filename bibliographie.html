@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <title>Bibliographie</title>
+	 <link rel="shortcut icon" href="favicon.ico"  />
+	 <link rel="stylesheet" href="css/style.css" />
+	 <link rel="stylesheet" href="css/bibliographie.css" />
+	 <link rel="stylesheet" href="css/bibliographieIndex.css" />
+	 <link rel="stylesheet" href="css/bibliographieIndexIndex.css" />
+	 <link rel="stylesheet" href="css/top.css"  media="screen">
+	 <link rel="stylesheet" href="css/Hoverable_Sidenav_Buttons.css">
+	 <link rel="stylesheet" href="css/footer.css" ><!-- footer ndreda -->
+	 <link rel="stylesheet" href="css/responsiveTopnav.css" >
+	 <style>
+	    #contenu, .contenu{	 display:inline; float: right; margin-left:0; margin-right:1%;}
+	    .coupeBloc { color:transparent; background:#474e5d;   display:inline-block;  position:relative; right:1%;}
+	    /* 
+		 * J'hesite encore de garder ou pas les coupeBloc
+		 * pour annuler les "coupeBloc" , ajouter la ligne suivante:
+		 *
+		 */
+		 
+		 /*.coupeBloc{ background:#558C89; float:right; width:100%; } */
+		 .coupeBloc{ background:#558C89; float:right; width:100%; z-index:1 !important; } 
+		 
+		 
+		 /*SOLUTION au blem 1: Assigner la mm hauteur aux 2 colonnes(div.timeLine et  main */  
+		 
+	    #bigContenair { display: flex !important; }
+	    .timeline , main { flex: 1 !important;  }
+				
+	    /* Une marge en bas */
+		
+		 #bigContenair { margin-bottom:2em;}
+	   
+	    /* Ajuster  le contenu de la colonne de gauche et augmenter son marge droite de 0.5% */
+		
+		main {  margin:0 .5% 0 0; padding:0 ;}
+		.contenu {width:99.5% !important; }
+		
+		
+		
+	    /* (c'est l'equivalent de margin-top)*/  
+        #date4 { -webkit-margin-before:780px !important;} /* Ibn Massound */  
+        #date7 { -webkit-margin-before:1670px !important;} /* Imam chafi*/
+        #date9 { -webkit-margin-before:1520px !important;} /* Bouhari*/
+        #date13 { -webkit-margin-before:1021px !important; } /* Ibn Majah */
+		#date11 { -webkit-margin-before:1762px !important; }  Ibn Kathir */
+        #date12 { -webkit-margin-before:605px !important; } /* Djalalein */
+        #date13 { -webkit-margin-before:1021px !important; } /* Ibn Majah */
+        #date14 { -webkit-margin-before:1005px !important; } /* Nawawi */
+	 </style>
+</head>
+<body style="background:#474e5d;">
+	<div class="topnav" id="myTopnav">
+	    <a class="active" href="index.html">Accueil</a>
+	    <a href="coment1/index.html">Commentaires(Tafsir) d'Ibn Kathir</a>
+	    <a href="coment2/index.html" target="_blank">Commentaires(Tafsir) Djalalein</a>    
+	    <div class="dropdown">
+			<button class="dropdown-btn" id="dropdown-btn" style="color:transparent;" onclick="bibliographieIndex()" > Bibliographie </button>
+			<div class="dropdown-content" >
+				<div id="divcompagon"  class="dropdown2" >
+				    <a href="#" id="compagnon" class="dropbtn2" onclick="swahaba()" >Les compagnons</a><br>
+					<div class="dropdown-content2"   id="swahaba"  >
+						 <a href="#date1" id="bouton01">Abou Houraira</a><br>
+						 <a href="#date2" id="bouton02">Anas Ibn Malik</a><br>
+						 <a href="#date3" id="bouton03">Ibn Abass</a><br>
+						 <a href="#date4" id="bouton04">Ibn Massound</a>
+					</div>
+                </div>
+				<div id="divimam" class="dropdown2">
+					<a href="#" id="imam" class="dropbtn2" onclick="imamou()" >Les quatres imam</a><br>
+					<div class="dropdown-content2"   id="imamou"  >
+						 <a href="#date5" id="bouton04">Abou Hanifa</a><br>
+						 <a href="#date6" id="bouton05">Imam Malik</a><br>
+						 <a href="#date7" id="bouton06">Imam Shafi</a><br>
+						 <a href="#date8" id="bouton07">Imam Hambal</a>
+					</div>
+                </div>
+				<div id="divsavant" class="dropdown2">
+					<a href="#" id="savant" class="dropbtn2" onclick="moilimou()" >Les historiens de référence</a><br>
+					<div class="dropdown-content2"   id="moilimou"  >
+						 <a href="#date9"  id="bouton09">al-Bouhari</a><br>
+						 <a href="#date10" id="bouton010">Mouslim</a><br>
+						 <a href="#date13" id="bouton013">Ibn Majah</a><br>
+						 <a href="#date14" id="bouton013">Nawawi</a><br>
+					</div>
+                </div>
+				<div id="divexegete" class="dropdown2">
+					<a href="#" id="exegete" class="dropbtn2" onclick="fundi()" >Trois exégètes populaires</a><br>
+					<div class="dropdown-content2"   id="fundi"  >
+						 <a href="#date11"  id="bouton011">Ibn Kathir</a><br>
+						 <a href="#date12" id="bouton012">Les Djalaleines</a><br>
+					</div>
+                </div>
+			</div>
+	    </div>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveTopnav()">&#9776;</a>
+	</div>
+	<!-- Hoverable Sidenav Buttons -->
+    <div id="mySidenav" class="sidenav" style="overflow: hidden !important;">
+	  <a href="#date1" id="bouton1" style="overflow: hidden !important;">Abou Houraira</a>
+	  <a href="#date2" id="bouton2" style="overflow: hidden !important;">Anas Ibn Malik</a>
+	  <a href="#date3" id="bouton3">Ibn Abass</a>
+	  <a href="#date4" id="bouton4" >Ibn Massound</a>
+	  <a href="#date5" id="bouton5">Imam Abû Hanifa</a>
+	  <a href="#date6" id="bouton6">Imam Malik</a>
+	  <a href="#date7" id="bouton7">Imam Shafi</a>
+	  <a href="#date8" id="bouton8">Imam Hambal</a>
+	  <a href="#date9" id="bouton9">Al Bouhari</a>
+	  <a href="#date10" id="bouton10">Mouslim</a>
+	  <a href="#date11" id="bouton11">Ibn Kathir</a>
+	  <a href="#date12" id="bouton12">Les Djalaleines</a>
+	</div>	
+	<!-- Mettre div.timeline et div.main dans un conteneur(#bigContenair) pour pouvoir ajuster leurs hauteur  -->
+	<div id="bigContenair">
+		<div class="timeline">
+		      <!-- Abou Houraira -->
+			  <div class="container left" id="date1">
+				<div class="content" > <!-- URGENT: FIXER UN max-height pour "div.content" sinon devoir recalculer les hauter à chaque édit des "Lorem ipsum dolor"   -->
+				    <h2>601</h2>
+				    <ul class="resumeAuteur" >
+					    <li>Maîtres: 
+						   <span class="itemAuteur"><strong>Le Prohète &#65018;</strong></span><br><br> 
+						</li>
+					    <li>
+					        Oeuvres: 
+						    <span class="itemAuteur" >
+						        <br>
+								<span class="dataItemAuteur">5 374 hadiths</span><br>
+							    <span class="dataItemAuteur"><strong>Sahifah Sahihah</strong></span><br><br> 
+						    </span>
+					    </li>
+					    <li>Disciples: <span class="itemAuteur"></span></li>
+				    </ul>
+				</div>
+			  </div>
+			  <!-- Anas -->
+			  <div class="container left" style="margin-top:525px;" id="date2">
+				<div class="content">
+				    <h2>612</h2>
+				    <ul class="resumeAuteur"  >
+					    <li>
+						    Maîtres: 
+						    <span class="itemAuteur" >
+							    <strong>Le Prohète &#65018;</strong> <br>
+								<span class="dataItemAuteur">Abou Houraira</span><br>
+								<span class="dataItemAuteur">ibn Abbas </span><br>
+								<span class="dataItemAuteur">ibn Massound</span><br>
+								<span class="dataItemAuteur">Muadh ibn Jabal</span><br>
+								<span class="dataItemAuteur">Salman le Perses</span><br><br>
+							</span> 
+						</li>
+					    <li>
+					        Oeuvres: 
+						    <span class="itemAuteur" >
+						        1 2667 hadiths <br><br>
+							    
+						    </span>
+					    </li>
+					    <li>Disciples:<br> 
+						   <span class="itemAuteur"> 
+						       <span class="dataItemAuteur">Iman Abou Hanifa</span>
+							</span>
+						</li>
+				    </ul>
+				</div>
+			  </div>
+			  <!-- Ibn Abass -->
+			  <div class="container left" style="margin-top:985px;" id="date3">
+				<div class="content" >
+				  <h2>619</h2>
+				    <ul class="resumeAuteur" >
+					    <li>
+						   Maîtres: 
+						   <span class="itemAuteur"><strong>Le Prohète &#65018;</strong></span><br><br> 
+						</li>
+					    <li>
+					        Oeuvres: 
+						    <span class="itemAuteur" >
+						        <br>
+								<span class="dataItemAuteur"><strong>Tanwir al-Miqbas</strong></span><br>
+							    <span class="dataItemAuteur" style="padding-left:7em;">ou </span><br> 
+							    <span class="dataItemAuteur">(<strong>Tafsir Ibn Abbas</strong>)</span><br><br> 
+						    </span>
+					    </li>
+					    <li>
+						    Disciples: <span class="itemAuteur">(voir ci-contre)</span>
+						</li>
+				    </ul>
+				</div>
+			  </div>
+			  <!-- Ibn Massound -->
+			  <div class="container left" style="margin-top:807px;" id="date4" >
+				<div class="content">
+				  <h2>~619</h2>
+				    <ul class="resumeAuteur"  >
+					    <li>
+						    Maîtres: 
+						    <span class="itemAuteur" >
+							    <strong>Le Prohète &#65018;</strong> <br><br>
+							</span> 
+						</li>
+					    <li>
+					        Oeuvres: 
+						    <span class="itemAuteur" >
+						        <br>
+							    <span class="dataItemAuteur">Bataille de Badr,</span><br>
+								<span class="dataItemAuteur">Bataille de Haybar, </span><br>
+								<span class="dataItemAuteur">B. de Hunayn,</span><br>
+								<span class="dataItemAuteur">B. de la Tranchée,</span><br>
+								<span class="dataItemAuteur">Bataille de Uhud,</span><br>
+								<span class="dataItemAuteur">Conquête de la </span><br>
+								<span class="dataItemAuteur">Mecque.</span><br><br>
+						    </span>
+					    </li>
+					    <li>Disciples: <span class="itemAuteur">(voir ci-contre)</span></li>
+				    </ul>
+				</div>
+			  </div>
+			  <!-- Imam Abû Hanifa -->
+			  <div class="container left" style="margin-top:1131px;" id="date5" >
+				<div class="content">
+				  <h2> 699</h2>
+				    <ul class="resumeAuteur"  >
+					    <li>
+						    Maîtres:<br> 
+						    <span class="itemAuteur" >Anas Ibn Malik</span><br>
+						    <span class="itemAuteur" style="color:#336699">Hammad ibn Abi Sulaiman</span><br>
+							<span class="itemAuteur" >Jaffar al-Sâdiq<sup><a href="https://fr.wikipedia.org/wiki/Ja%27far_al-S%C3%A2diq" target="_blank" class="annotation">(5)</a></sup></span><br>
+							<span class="itemAuteur" >Imam Malik</span><br><br>
+						</li>
+					    <li>
+					        Oeuvres:<br> 
+							<span class="itemAuteur">Musnad Abou Hanifa</span>
+					    </li>
+					    <li>
+						     Disciples:<br> 
+							 <span class="itemAuteur" id="abouyoussoufHaut" style="color:blue">Abou Yoûsouf<sup><a href="#abouyoussoufBas"  class="annotation" style="font-size:1.2em; font-weight:bolod;">(6)</a></sup></span><br>
+							 <span class="itemAuteur">Zufar ibn al-Hudhail.</span>
+						</li>
+				    </ul><br>
+					<span style="font-family:serif; ">L'école hanafite est  la plus libérale .</span>
+				</div>
+			  </div>
+			  <!-- Imam Malik -->
+			  <div class="container left" style="margin-top:1447px;" id="date6" >
+				<div class="content">
+				  <h2>~ 711</h2>
+
+					<span class="reference" style="color:black">
+					  Il aurait écrit plus de 100 mille hadiths de sa main et fait parti des trois rapporteurs exceptionnels constituants la <span class="bleu">"chaîne d'or"</span> avec <span class="referenceNom">Nâfi</span> et le compagnon <span class="referenceNom">Abdallah Ibn Omar</span>.
+					</span><br><br>
+					<span style="font-family:serif; "> L'école malékite admet la notion d'interprétation personnelle .</span>
+
+				</div>
+			  </div>
+			  <!-- Imam chafi -->
+			  <div class="container left" style="margin-top:1696.1695px;" id="date7" >
+				<div class="content">
+				  <h2>767</h2>
+				    <ul class="resumeAuteur"  >
+					    <li>
+						    Maîtres:<br> 
+						    <span class="itemAuteur" >
+							    <span class="dataItemAuteur">Imam Malik </span><br><br>
+							</span> 
+						</li>
+					    <li>
+					        Oeuvres: <br>
+						    <span class="itemAuteur" >
+						        
+							    <span class="dataItemAuteur">Kitâb Al-Umm</span><br>
+								<span class="dataItemAuteur">Risâlah Usûl Fiqh</span><br><br>
+						    </span>
+					    </li>
+					    <li>Disciples:<br> 
+						  <span class="itemAuteur">
+						        <span class="dataItemAuteur">Imam Hanbal</span><br>
+								<span class="dataItemAuteur">Abu Thawr </span><br><br>
+						  </span>
+						</li>
+				    </ul>
+					<span style="font-family:serif; "> L'école chafiite associe traditionalisme et interprétation.</span>
+				</div>
+			  </div>
+			  <!-- Imam Hanbal -->
+			  <div class="container left" style="margin-top:1246.1px;" id="date8" >
+				<div class="content">
+				  <h2>780</h2>
+				    <ul class="resumeAuteur"  >
+					    <li>
+						    Maîtres:<br> 
+						    <span class="itemAuteur" >
+							    <span class="dataItemAuteur">Imam Shâfi </span><br>
+							    <span class="dataItemAuteur" style="color:blue" id="abouyoussoufBas">Abou Yoûsouf<sup><a href="#abouyoussoufHaut"  class="annotation" style="font-size:1.2em; font-weight:bolod;">(6)</a></sup></span><br><br>
+							</span> 
+						</li>
+					    <li>
+					        Oeuvres: <br>
+						    <span class="itemAuteur" >
+						        
+							    <span class="dataItemAuteur bleu" style="font-weight:bold">Le Mousnad</span></span><br>
+								<span class="dataItemAuteur">L’ascétisme</span><br><br>
+						    </span>
+					    </li>
+					    <li>Disciples:<br> 
+						  <span class="itemAuteur">
+						        <span class="dataItemAuteur bleu" style="font-weight:bold">imam Boukhari</span><br>
+								<span class="dataItemAuteur bleu" style="font-weight:bold">imam Mouslim</span><br><br>
+						  </span>
+						</li>
+				    </ul>
+					<span style="font-family:serif; ">L'école hanbalite  est la plus rigoriste et la plus austère.</span>
+				</div>
+			  </div>
+			  <!-- Bouhari -->
+			  <div class="container left" style="margin-top:1517.5px;" id="date9" >
+				<div class="content">
+				  <h2>810</h2>
+				    <ul class="resumeAuteur"  >
+					    <li>
+						    Maîtres:<br> 
+						    <span class="itemAuteur" >
+							    <span class="dataItemAuteur">Imam Hanbal<sup><a href="#hanbal"  class="annotation" style="font-size:1.2em; font-weight:bolod;">(7)</a></sup></span><br>
+							</span> 
+						</li>
+					    <li>
+					        Oeuvres: <br>
+						    <span class="itemAuteur" >
+								<span class="dataItemAuteur" style="margin-left:-3em; font-size:.85em;"><small>&#128215;</small></span><span class="dataItemAuteur bleu" style="font-weight:bold; margin-left:-3.5em; ">SAHIH BOUHARI</span></span><br>
+							    <span class="dataItemAuteur" style="margin-left:-3em; font-size:.85em;"><small>&#128215;</small> TAREH KABIR</span><br>
+							    <span class="dataItemAuteur" style="margin-left:-3em; font-size:.85em;"><small>&#128215;</small> TAFSIR KABIR</span><br>
+						    </span>
+					    </li>
+					    <li>Disciples:<br> 
+						  <span class="itemAuteur">
+						        <span class="dataItemAuteur bleu" style="font-weight:bold">Mouslim</span><br>
+						  </span>
+						</li>
+				    </ul>
+					<span style="font-family:serif; "></span>
+				</div>
+			  </div>
+			  <!-- Muslim -->
+			  <div class="container left" style="margin-top:2045px;" id="date10" >
+				<div class="content">
+				  <h2>821</h2>
+				    <ul class="resumeAuteur"  >
+					    <li>
+						    Maîtres:<br> 
+						    <span class="itemAuteur" >
+							    <span class="dataItemAuteur">Bouhari<sup><a href="#bouhari"  class="annotation" style="font-size:1.2em; font-weight:bolod;">(8)</a></sup></span><br>
+							    <span class="dataItemAuteur">Imam Hanbal<sup><a href="#hanbal"  class="annotation" style="font-size:1.2em; font-weight:bolod;">(9)</a></sup></span><br>
+							</span> 
+						</li>
+					    <li>
+					        Oeuvres: <br>
+						    <span class="itemAuteur" >
+							    <span class="dataItemAuteur" style="margin-left:-3em; font-size:.85em;"><small>&#128215;</small></span><span class="dataItemAuteur bleu" style="font-weight:bold; margin-left:-3.5em; ">Sahîh Muslim</span></span><br>
+							    <span class="dataItemAuteur" style="margin-left:-3em; font-size:.85em;"><small>&#128215;</small> Al-Kunâ wal-Asmâ’</span><br>
+							    <span class="dataItemAuteur" style="margin-left:-3em; font-size:.85em;"><small>&#128215;</small> Tabaqât At-Tabi`în</span><br>
+							    <span class="dataItemAuteur" style="margin-left:-3em; font-size:.85em;"><small>&#128215;</small> Illusions des Muhaddith</span><br>
+							    <span class="dataItemAuteur" style="margin-left:-3em; font-size:.85em;"><small>&#128215;</small> Les Paires</span><br>
+							    <span class="dataItemAuteur" style="margin-left:-3em; font-size:.85em;"><small>&#128215;</small> Les Fils des Compagnons</span><br>
+							    <span class="dataItemAuteur" style="margin-left:-3em; font-size:.85em;"><small>&#128215;</small> Les Frères et les Sœurs</span><br>
+						    </span>
+					    </li>
+					    <li>Disciples:<br> 
+						  <span class="itemAuteur">
+						        <span class="dataItemAuteur">Tirmidhî<sup><a href="https://fr.wikipedia.org/wiki/Al-Tirmidh%C3%AE" target="_blank" class="annotation" style="font-size:1.2em; font-weight:bolod;">(10)</a></sup></span>
+						  </span>
+						</li>
+				    </ul>
+					<span style="font-family:serif; "></span>
+				</div>
+			  </div>
+			  <!-- Ibn Majah -->
+			  <div class="container left" style="margin-top:1015px;" id="date13" >
+				<div class="content">
+				  <h2>824</h2>
+				    <ul class="resumeAuteur"  >
+					    <li>
+						    Maîtres: 
+						    <span class="itemAuteur" >
+							    <span class="dataItemAuteur" style="padding-left:.3em;">Ibn-Abī-Šaiba</span>
+							</span> 
+						</li>
+					    <li>
+					        Oeuvres:<br> 
+						    <span class="itemAuteur" >
+							    <span class="dataItemAuteur" style="margin-left:-3em; font-size:.85em;"><small>&#128215;</small></span><span class="dataItemAuteur bleu" style="font-weight:bold; margin-left:-3.5em; ">Sunan ibn Majah </span></span><br>
+							    <span class="dataItemAuteur" style="margin-left:-3em; font-size:.85em; font-weight:bold;"><small>&#128215;</small> Kitāb al-Tafsīr</span><br>
+							    <span class="dataItemAuteur" style="margin-left:-3em; font-size:.85em;"><small>&#128215;</small> Kitāb al-Tārīkh</span><br>
+						    </span>
+					    </li>
+					    <li>Disciples: 
+						  <span class="itemAuteur">
+						        <span class="dataItemAuteur" style="padding-left:.3em;">Ibn Abi Badr</a></sup></span>
+						  </span>
+						</li>
+				    </ul><br>
+					<span style="font-family:serif;">Le <span style="font-weight:bold">Sunan ibn Majah</span> fait paritie des <span style="font-weight:bold">"six Grands Recueils"</span> de Hadith.<br> Une traduction éxiste en englais.</span>
+				</div>
+			  </div>
+			  <!-- Nawawi -->
+			  <div class="container left" style="margin-top:1000px;" id="date14" >
+				<div class="content">
+				  <h2>1233</h2>
+				    <ul class="resumeAuteur"  >
+					    <li>
+						    Maîtres:<br> 
+						    <span class="itemAuteur" >
+							    <span class="dataItemAuteur" style="margin-left:-3em;">Abu Shama <span style="font-weight:bold">al-Maḳdisī</span><sup><a href="https://en.wikipedia.org/wiki/Abu_Shama" target="_blank" style="text-decoration:none;">&#128260;</a></sup></span>
+							</span><br><br> 
+						</li>
+					    <li>
+					        Oeuvres:<br> 
+						    <span class="itemAuteur" >
+							    <span class="dataItemAuteur" style="margin-left:-3em; font-size:.85em;"><small>&#128215;</small></span><span class="dataItemAuteur bleu" style="font-weight:bold; margin-left:-3.5em; ">Le jardin des vertueux </span></span><br>
+							    <span class="dataItemAuteur" style="margin-left:-3em; font-size:.85em; font-weight:bold;"><small>&#128215;</small> Les 40 d’An Nawawi</span><br>
+							    <span class="dataItemAuteur" style="margin-left:-3em; font-size:.85em;"><small>&#128215;</small> Commentaire du </span><br>
+							    <span class="dataItemAuteur" style="margin-left:-3em; font-size:.85em;"><small style="color:transparent">&#128215;</small> SAHIH MUSLIM</span><br>
+							    <span class="dataItemAuteur" style="margin-left:-3em; font-size:.85em;"><small>&#128215;</small> &ensp;...&ensp; etc</span><br>
+						    </span><br><br>
+					    </li>
+					    <li>Disciples: 
+						  <span class="itemAuteur">
+						        <span class="dataItemAuteur" style="padding-left:.3em;"> --- </a></sup></span>
+						  </span>
+						</li>
+				    </ul>
+				</div>
+			  </div>
+			  <!-- Ibn Kathir -->
+			  <div class="container left" style="margin-top:1790px;" id="date11" >
+				<div class="content" style="">
+				  <h2>1301</h2>
+				  <ul class="resumeAuteur" >
+					<li>Maître:<br> 
+					   <span class="itemAuteur" >
+					    <span class="dataItemAuteur">al Hajaj al Mizzi</span> <br>
+					    <span class="dataItemAuteur">Ibn Taymiyyah</span>
+                       </span>						
+					</li>
+					<li>Oeuvres: <span class="itemAuteur">voir cis-contre </span></li>
+					<li>Disciple: <span class="itemAuteur"></span></li>
+				  </ul>
+				</div>
+			  </div>
+			  <!-- djalaleyne -->
+			  <div class="container left" style="margin-top:631px" id="date12">
+				<div class="content" style="height:30em;"><!-- AUGMENTER LA HAUTEUR SI NECESSAIRE -->
+
+				<!-- Mahli -->
+				<h2>???<small style="font-size:.7em !important;">(al-Mahallî )</small></h2>
+				 <ul class="resumeAuteur" >
+					<li>Maître:<br> 
+					   <span class="itemAuteur"> 
+					       ...
+                       </span>						
+					</li>
+					<li>Oeuvres: <span class="itemAuteur">voir cis-contre </span></li>
+					<li>Disciple:<br> <span class="itemAuteur">Jalâl Dine as-Suyûtî </span></li>
+				  </ul><br><br>
+				  <!-- Mahli Suyutu -->
+				  <h2>1445<small style="font-size:.7em !important;">(as-Suyûtî)</small></h2>
+				  <ul class="resumeAuteur" >
+					<li>Maître:<br> 
+					   <span class="itemAuteur" > Ibn Hajar Asqalani<sup><a href="https://fr.wikipedia.org/wiki/Ibn_Hajar_al-Asqalani" target="_blank" > &#128260; </a></sup></span><br>
+					   <span class="itemAuteur" > Jalal Dine al-Mahallî </span>
+					</li>
+					<li>Oeuvres: <span class="itemAuteur">voir cis-contre</span></li>
+					<li>Disciple:<br> <span class="itemAuteur"></span></li>
+				  </ul>
+				</div>
+			</div>
+		</div>
+		<main>
+			<!-- Abou houraira -->
+			<div id="abouhouraira" class="contenu" style="margin-top:0; margin-bottom:0; padding:1em 0 0 0; ">
+				<hr style="width:80%; float:left; margin-left:10%; border-color:#558C89; border:none;">
+				<div class="entree titreFiche"><h3 style="line-height:0; font-family:serif; font-style:italic"> Abou Houraira (Swahaba) </h3></div>
+			</div>
+			<div class="contenu" style=" padding-bottom:3em; margin-bottom:0; margin-top:0; padding-top:1em; ">
+				<div class="entree" style="padding:1em 2em" >
+						 <img src="img/abouhouraira.png" width="200" height="200" align="left"  style="padding-right:1em"/>
+					      Compagnon du prophète &#65018;, Abu Hurayra est né entre [601 - 604]. Il est le principal Muhaddith<span class="reference" style="font-size:1em">(rapporteur de hadith)</span>, cité dans l'<span style="color:#00b36b">isnad</span><span class="reference" style="font-size:1em">( chaine de transmission des refrences menant au Prophète)</span>.<br> Il fréquenta Muhammad &#65018; moins de quatre ans, et transmit 5 374 hadiths.<br>
+						  Né au Yemen, vers l'âge de trente ans il arriva à Médine avec la délégation des Daws pour embrasser l'islam. Il rencontra le Prophète à la fin de sa vie à Khaybar en mai-juin 628. Dès lors ne le quitta plus.<br>
+						  Il a écrit  un grand nombre de livres sur le prophète. Notamment le <u>Sahifah Sahihah</u>: une compilation de 140 récits sur le prophète. Cet oeuvre nous est parvenu parce qu'il avait donné à <span class="referenceNom">Hammâm ibn Munabbih</span>. <br>
+						  La majorité des savants sunnites considèrent Abou Hourayra comme l'un des plus grands narrateurs de hadith, digne de confiance, comme tous les compagnons du prophète Mahomet. <br><br>
+						  Grâce à ses prodigieux efforts, des centaines de hadîths et paroles du Prophète &#65018; ont pu être transmis aux générations présentes. 
+						  Avec les compagnons:
+						    <!-- Remarque: le "margin-top:0" ne fonctionne pas si <ul> est dans un <p>. Pourquoi? (sujet de recherche ...) -->
+							<ul type="square" style="margin-top:0; margin-bottom:0;">
+								<li>Abd Allâh fils d’Omar,</li>
+								<li>Anas fils de Malik, </li>
+								<li>la Mère des Croyants Aishah,</li>
+								<li>Jâbir Ibn Abd Allâh,</li>
+								<li>et Abû Saïd Al-Khudrî,</li>
+							</ul>
+					     il fait partie des principaux transmetteurs de Hadîth. Ils ont transmis plus de mille paroles du Prophète &#65018;
+                         <a href="http://www.islamophile.org/spip/Abu-Hurayrah.html" target="_blank"><img src="img/pageSuivant.png"   class="marfa3" /></a></i><br>	
+				</div>
+				<br><hr class="finExo" ><div class="entree titreExo" ></div>
+			</div>
+			<div class="coupeBloc">SEPARE LES BLOC</div>
+			<!-- Anas -->
+			<div id="anas" class="contenu" style="margin-top:0; margin-bottom:0; padding:1em 0 0 0; ">
+				<hr style="width:80%; float:left; margin-left:10%; border-color:#558C89; border:none;">
+				<div class="entree titreFiche" ><h3 style="line-height:0; font-family:serif; font-style:italic"> Anas Ibn Malik (Swahaba) </h3></div>
+			</div>
+			<div class="contenu" style=" padding-bottom:3em; margin-bottom:0; margin-top:0; padding-top:1em; ">
+				<div class="entree" style="padding:1em 2em" >
+					<img src="img/anas.png" width="200" height="200" align="left" style="padding-right:1em"/>
+				     Compagnon du Prophète &#65018;(Sahaba), Anas rapporta 1 2667 hadiths dont 168 figurent dans le <span class="textSource">Sahih al-Boukhari</span> et le <span class="textSource">Sahih Mouslim</span>. Il est donc ainsi considéré par les sunnites comme un des plus grands narrateurs, digne de confiance et faisant partie des meilleurs Sahaba. L'authenticité de ses récits reste indiscutable. Quant à sa rigueur; <span class="">Muhammad Hamidullah</span>, dans son livre, <span class="textSource">Le Prophète de l'Islam</span><span class="reference">(éditions Al-Najah, Tome II, p.649-650)</span>, nous éclaire en ces termes: "Anas écrivait dans des cahiers les dires du prophète &#65018; et en faisait la lecture de temps en temps à celui-ci en vue de corriger les erreurs possibles".</span><br><br>
+					 Connu sous le nom de serviteur du Prophète, Anas Ibn Malik est né en 612. Lorsque le prophète arriva à Médine en 622, la mère d'Anas le présenta au prophète comme son serviteur. Le garçon s’attacha fortement aux Prophète &#65018; et ne se sépara jamais de lui. Dès l'âge de 8 ans, Anas devint alors, un compagnon fidèle de Muhammad &#65018;  Le cœur d’Anas<span class="reference">(qu’Allah soit satisfait de lui)</span>, était empli d’amour pour le Prophète. Il disait : « Aucune nuit ne passe sans que je ne vois mon bien-aimé », c'est-à-dire le Prophète &#65018;. Il aimait tout aussi bien Anas et aimait plaisanter avec lui. Anas resta avec le Prophète &#65018; jusqu'à sa mort en 632: c'est-à-dire pendant une décennie. Dix ans, au cours desquels il prit part à ses côtés à huit batailles et pria avec lui vers les <u>deux qibla-s</u>. <br>
+					 &Agrave; la mort du Prohète &#65018; Anas a tout juste 20 ans. Alors il s'engage dans l'armée et participe aux conquêtes de l'islam. Il commande la cavalerie lors du siège de la solide forteresse de <u>Chouchtar</u> en Perse, où il perdit son frère <span class="referenceNom">Bara</span> qui mourut  en essayant de le sauver.<br><br>
+					 <img src="img/tombeAnas.png" width="200" height="200" align="left"  style="padding-right:1em"/>
+					 Il se rendit ensuite à Damas puis s'installa à Bassorah en Irak où il resta jusqu'à sa mort, à l'âge de 100 ans. Il est donc le Compagnon du prophète ﷺ qui a vécu le plus longtemps. Il fut le dernier sahabi à mourir après <span class="referenceNom">Abou Tofayl</span>. Anas connut en personne <span class="bleu" style="font-weight:bold">Abou Hanifa</span>, fondateur de la première des quatre grandes écoles de jurisprudence islamique. Ce qui fait de <span class="">Abou Hanifa</span>, un <strong>tabeï</strong>(personne ayant connu au moins un des Sahaba).
+					 La mosquée et le sanctuaire d'Anas Ibn Malik sont situés à Bassora, en Irak. Sa tombe est un simple cénotaphe. Cependant, le sanctuaire a été détruit avec des engins explosifs. Malgré le fait que la mosquée et le sanctuaire sont fortement endommagés et que les murs sont tachés de vandalisme, le complexe reste un lieu de visite populaire des musulmans sunnites.
+                     <a href="https://www.islamweb.net/fr/article/176127/Anas-ibn-M%C3%A2lik-le-serviteur-du-Proph%C3%A8te" target="_blank"><img src="img/pageSuivant.png"   class="marfa3" /></a></i><br>					
+				</div>
+				<br><hr class="finExo" ><div class="entree titreExo" ></div>
+			</div>
+			<div class="coupeBloc">SEPARE LES BLOC</div>
+			<!-- Ibn Abass -->
+			<div id="abass" class="contenu" style="margin-top:0; margin-bottom:0; padding:1em 0 0 0; ">
+				<hr style="width:80%; float:left; margin-left:10%; border-color:#558C89; border:none;">
+				<div class="entree titreFiche" ><h3 style="line-height:0; font-family:serif; font-style:italic"> Ibn Abbas (Swahaba)</h3></div>
+			</div>
+			<div class="contenu" style=" padding-bottom:3em; margin-bottom:0; margin-top:0; padding-top:1em; ">
+				<div class="entree" style="padding:1em 2em" >
+					 <p>	
+						 <img src="img/ibnAbass2.png" width="200" height="200" align="left"  style="padding-right:1em"/>
+						 Abd Allâh ibn Abbas<sup><a href="#a2" class="annotation">(1)</a></sup>, né vers 619 et mort vers 687-688, est le fils d'Abbas ibn Abd al-Muttalib et fut pour cette raison appelé Ibn Abbas (fils d'Abbas). C'est est un cousin paternel du Prophète &#65018;.
+						 Ibn Abbas nait trois ans avant l'hégire, d'une mère déjà convertie à l'islam.
+						 Sa mère Umm al-Fadl Lubaba était fière d'être la seconde femme à s'être convertie à l'islam, le même jour que son amie Khadija bint Khuwaylid, première femme du Prophète &#65018; .
+						  
+						  Dès sa jeunesse, il s'adonne à l'étude et à la compilation des informations sur le Prophète &#65018;. Fort de ses connaissances, il se mit à enseigner. On trouve parmi ses illustres élèves :
+						  <ul type="square">
+							<li> Ikrima: son serviteur et plus grand élève</li>
+							<li>Mujahid ibn Jabr al-Makki (mort en 722): Son héritier dans le Tafsir</li>
+							<li>Al-Rabi ibn Khuthaym (mort en  682): Traduit en anglais</li>
+							<li>Al-Qasim ibn Muhammad ibn Abi Bakr(mort en  726): Traduit en anglais</li>
+							<li>Ata' ibn Abi Rabah(mort en  732): Traduit en anglais </li>
+							<li>Wahb ibn Munabbih: Traduit en anglais aussi</li>
+						  </ul>
+						  
+						  
+						  <img src="img/ibnAbass1.png" width="200" height="200" align="left" style="padding-right:1em; padding-bottom:0;"/>
+						  Il est respecté par les musulmans pour ses connaissances.
+						  Il est un des premiers experts du Coran, ainsi que de la Sunna.
+						  Les sunnites le considèrent comme le plus savant des compagnons dans le Tafsir.
+						  Un livre intitulé Tanwir al-Miqbas min Tafsir Ibn `Abbas sur le Tafsir, contient toutes les explications nécessaires pour comprendre qu'il faut revenir à Ibn Abbas.
+						  Parmi tous les récits transmis par Ibn Abbas, 1660 ont été considérés comme authentiques par Boukhari et Muslim, auteurs de deux célèbres recueils de hadiths  authentiques (Sahîh).
+						  Il ressentait un intérêt sincère et durable pour les gens. Il était attentionné et prévenant. Une fois, il dit : " Lorsque j’ai réalisé l’importance d’un verset du Livre d'Allah 'azza wa djal, je prie pour que tout le monde sache ce que je sais !".				   
+					 </p>				 	 
+				</div>
+				<br><hr class="finExo" ><div class="entree titreExo" ></div>
+			</div>
+			<div class="coupeBloc">SEPARE LES BLOC</div>
+			<!-- Ibn Massound -->
+			<div id="massound" class="contenu" style="margin-top:0; margin-bottom:0; padding:1em 0 0 0; ">
+				<hr style="width:80%; float:left; margin-left:10%; border-color:#558C89; border:none;">
+				<div class="entree titreFiche" ><h3 style="line-height:0; font-family:serif; font-style:italic"> Ibn Massound (Swahaba)</h3></div>
+			</div>
+			<div class="contenu" style=" padding-bottom:3em; margin-bottom:0; margin-top:0; padding-top:1em; ">
+				<div class="entree" style="padding:1em 2em" >
+					<img src="img/ibnMassound.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					Ibn Masʿūd(ابن مسعود) de son nom complet  Abdullah ibn Maçud  est un compagnon du Prophète &#65018;<span class="reference">(Le 6ème converti)</span>. C'est son  assistant personnel: au service du Prophète comme secrétaire notant les sourates. Il eut donc l'occasion d'être lui-même témoin direct de la révélation. Ibn Masûd est une source importante d'interprétation du Coran. Il est d'ailleurs l'un des quatre(<span class="referenceNom">Salim mawla Abi Hudhayfa</span>, <span class="referenceNom">ibn Ka'b </span>, <span class="referenceNom">Muadh ibn Jabal </span>) chez qui, il est bien vu d'apprendre le Coran. Il est d'ailleurs, l'auteur d'une autre compilation des sourates du Coran qui perdura trois siècles. D'après <span class="referenceNom">Addullah ibn Amr</span>, le Prophète &#65018; a dit :
+                     <span class="SUNNA">
+					    « Prenez le Coran de quatre personnes:
+						<ul class="ulSUNNA" style="list-style:square;">
+						   <li><strong>Ibn Umm Abd</strong><span class="reference">( surnom d'<strong>Ibn Massund</strong>)</span></li>
+						   <li>Muâdh <strong>ibn Jabal</strong></li>
+						   <li>Ubayy <strong>ibn Kab</strong></li>
+						   <li>et  <strong>Sâlim</strong>, l'affranchi de Abû Hudhayfa. »</li>
+						</ul>
+						
+					 </span>					
+					<span class="reference">(Hadith N°4504: du Sahih Muslim)</span><br>
+					Abd Allâh Ibn Massound fut instruit à "l’école" du Prophète. Il fut le meilleur récitateur du Coran parmi les compagnons du Prophète et le comprenait encore mieux que tous. Par conséquent, il était aussi celui qui avait le plus de connaissance en terme de Législation islamique <span class="reference">(Shari`ah)</span>. Il a soutenu la position que le fait de prononcer la formule de répudiation trois fois à la suite : <strong>« triple talâq »</strong> ne compte que pour une seule fois et donc ne constitue pas une répudiation définitive et irrévocable mais seulement une répudiation dite réversible jusqu'à la fin du délai de viduité.<br><br>
+					<img src="img/KOUFAen1915.png" width="200" height="200" align="left" style="padding-right:1em;  "/>
+					En 639, Ibn Masûd s'installe à Koufa, ville que Omar ibn al-Khattâb vient de faire construire. Il y enseigne la religion et la compréhension de la loi islamique. Il est même rapporté qu'Omar s'exclama un jour: <span class="reference" style="font-size:1em; ">« Je vous ai donné la priorité sur moi en vous envoyant Abdullah ibn Maçud. »</span>.
+                    Il était le plus savants des compagnons du Prophète &#65018;. Et rien ne peut mieux illustrer cela  que le récit de l’homme qui interpella Omar dans la plaine d’Arafat :<span class="reference" style="font-size:1em; "> "Ô Commandeur des Croyants! je reviens de Kûfah  où un homme est en train de retranscrire le Coran en se basant sur sa mémoire."</span>
+					Omar se fâcha et, tout en fumant de colère, entreprit les cents-pas auprès de son chameau.<span class="reference" style="font-size:1em; ">"Quelle est l’identité de cet homme ?</span> demanda Omar.<br>
+					<span class="reference" style="font-size:1em; "> - " Abdullah ibn Maçud"</span> , répondit l’homme. Alors la colère d'Omar s’estompa et il retrouva son calme: <br>
+                    <span class="reference" style="font-size:1em; font-weight:bold; ">« Malheur à toi, dit-il à l’homme, par Dieu, je ne connais aucun homme qui ne soit aussi doué dans cette matière que lui ».</span> <br> Ibn Maçud  vécut jusqu’au Califat de notre maître Othmân.<br><br>
+					À Koufa, il eut pour disciples:
+					<ul type="square" style="margin-top:0; margin-bottom:0;">
+						<li>Alqamah ibn Qays an-Nakha'i</li>
+						<li>Aswad ibn Yazid </li>
+						<li>Masruq ibn al-Ajda'</li>
+					</ul>
+					Ibn Masûd meurt entre 650 et 653, sous le califat d'Othman. 
+                     <a href="http://www.islamophile.org/spip/Abd-Allah-Ibn-Mas-ud.html" target="_blank"><img src="img/pageSuivant.png"   class="marfa3" /></a></i><br>					
+				</div>
+				<br><hr class="finExo" ><div class="entree titreExo" ></div>
+			</div>
+			<div class="coupeBloc">SEPARE LES BLOC</div>
+			<!-- Imam Abu Hanifa -->
+			<div id="abuhanifa" class="contenu" style="margin-top:0; margin-bottom:0; padding:1em 0 0 0; ">
+				<hr style="width:80%; float:left; margin-left:10%; border-color:#558C89; border:none;">
+				<div class="entree titreFiche" ><h3 style="line-height:0; font-family:serif; font-style:italic"> Imam Abû Hanifa</h3></div>
+			</div>
+			<div class="contenu" style=" padding-bottom:3em; margin-bottom:0; margin-top:0; padding-top:1em; ">
+				<div class="entree" style="padding:1em 2em" >
+					<img src="img/abuHanifa.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					Son père, Thabit est un martyre qui a combattu aux côtés du Calife Ali ibn Abi Toilib(cousin du Prophète). Avant de mourir en chahid, le calife aurait fait des invocations à Allah pour qu'il bénisse la progéniture de Thabit et lui accorde de sa miséricorde. Sa demande fut exaucée et Abou Hanifa naquit à Koufa le 5 Septembre 699.
+					Il y a vécu presque toute sa vie. Il est néanmoins connu pour avoir voyagé dans la région du Hedjaz en Arabie lors de sa jeunesse. Là-bas, il a étudié sous l'autorité des enseignants les plus renommés de La Mecque et Médine à cette époque. Parmi ses maîtres, on peut  notamment citer le compagnon <span class="referenceNom" style=" font-family:Calibri;">Anas Ibn Malik </span><sup><a href="#anas"  class="annotation"> (1)</a></sup>. 
+					
+					<p>Il est le fondateur éponyme de l'école de jurisprudence sunnite <span class="bleu">hanafite</span>. Celle-ci est demeurée l’école de droit musulman la plus suivie dans la tradition sunnite. Aujourd'hui, un tiers des musulmans dans le monde suivent l'école de jurisprudence <span class="bleu">hanafite</span>.<p>
+
+                    On sait peu de choses sur sa vie. Élevé dans la religion musulmane (il mémorisa le Qor'ān). D'origine perse, parlant donc persan et arabe, le jeune Abou Hanifa était destiné à suivre les traces de son père, commerçant à Koufa. C'est ainsi qu'avant ses 20 ans, il fonda et fit prospérer un atelier de tissage de la soie  ainsi qu'un commerce de vêtements. <u>Il possédait un grand bâtiment avec des ouvriers et des artisans et ses ressources lui permettaient d'être indépendant et pouvait concentrer ses énergies sur le savoir</u>
+					
+					<p>  Il eut l'occasion de rencontrer des tabi'îne et des savants tels que les chiites <span class="referenceNom">Jafar al-Sâdiq</span>, <span class="referenceNom">Zayd Ben Ali</span> et  l'<span class="bleu" style="font-weight:bold">Imam Malik</span>. Ce, au cours de ses nombreux voyages qui avaient pour but de parfaire sa connaissance.</p> 
+					<img src="img/koufa.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					Il est établi qu'Abu Hanifa obtint sa connaissance en Irak, à Koufa, principalement 
+					de son maître <span class="referenceNom">Hammad <br>ibn Abi Sulayman</span>, qui succéda à <br>
+					<span class="referenceNom">Ibrahim an-Nakha'i</span>, qui succéda à <br>
+					 <span class="referenceNom">ibn Qays (son oncle)</span>, qui succéda à <br>
+					<span class="bleu" style="font-weight:bold;">Abdullah ibn Masud</span>, envoyé à Koufa par le deuxième calife de l'islam Omar ibn al-Khattab.<br>
+					Ou comme le veux la métaphore : <span class="SUNNA" style="display:inline; padding-left:.3em;"> « Le Fiqh a été planté par Ibn Masud qu'Allah soit satisfait de lui, arrosé par Alqamah, récolté par Ibrahim an-Nakha’i, broyé par Hammad, moulu par Abou Hanifa » </span><br><br>
+					<img src="img/tombeAbuHanifa.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					Le 15 août 767<span class="reference">(15 Rajab 150 AH)</span>, Abou Hanifa mourut en prison. La cause de sa mort demeure incertaine. Abou Hanifa aurait émis un avis juridique appelant à l'insurrection contre le monarque d'Irak, <span class="referenceNom">Al-Mansour</span> qui l'aurait empoisonné en retour.<br>
+                    Une autre tradition raconte qu'en 763 <span class="reference">(146 AH)</span>, <span class="referenceNom">al-Mansour</span>, le deuxième monarque abbasside offrit à Abou Hanifa le poste de juge en chef de l’État. Celui-ci déclina l’offre, préférant rester indépendant. Le monarque l'a alors fait assassiné.
+					<p>Son élève <span class="referenceNom">Abou Yoûsouf</span> a ensuite été nommé Qadi Al-Qudat (juge en chef de l’État) par le calife <span class="referenceNom">Hâroun ar-Rachîd</span>.</p>					
+					À Koufa, il eut pour disciples:
+					<ul type="square" style="margin-top:0; margin-bottom:0;">
+						<li>Abou Yoûsouf</li>
+						<li>al-Shaybani  </li>
+						<li>Masruq ibn al-Ajda'</li>
+					</ul>
+					
+					L'Imam Abû Hanifa meurt à l'âge de 68 ans,<br> sous les tortures de  la dysnastie Abbassides . 
+                     <a href="https://fr.wikipedia.org/wiki/Ab%C3%BB_Han%C3%AEfa" target="_blank"><img src="img/pageSuivant.png"   class="marfa3" /></a></i><br>					
+				</div>
+				<br><hr class="finExo" ><div class="entree titreExo" ></div>
+			</div>
+			<div class="coupeBloc">SEPARE LES BLOC</div>
+			<!-- Imam Malik -->
+			<div id="malik" class="contenu" style="margin-top:0; margin-bottom:0; padding:1em 0 0 0; ">
+				<hr style="width:80%; float:left; margin-left:10%; border-color:#558C89; border:none;">
+				<div class="entree titreFiche" ><h3 style="line-height:0; font-family:serif; font-style:italic"> Imam Malik ( Malik ibn Anas )</h3></div>
+			</div>
+			<div class="contenu" style=" padding-bottom:3em; margin-bottom:0; margin-top:0; padding-top:1em; ">
+				<div class="entree" style="padding:1em 2em" >
+					<img src="img/imamMalik1.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					Né entre 708 et 716, son enseignement est le fondement  de l'<span class="bleu" style="font-weight:bold;">école malékite</span>, l'une des 4  écoles de jurisprudence  sunnite.<br>
+					Son œuvre compte parmi les plus importantes contributions dans<br>&#128215; <strong>le FIKH</strong>(jurisprudence), <br>&#128215; <strong> la SUNNA</strong>(Vie du Prophète) <br>&#128215; et du <strong>dogme islamique</strong>. <br>Très respecté parmi les savants musulmans, il est l'auteur du livre <span class="bleu" style="font-weight:bold;">Al-Muwatta</span>, étude des enseignements et actions du Prophète de l'islam ainsi qu'une approche sociologique de la civilisation islamique.<br>
+					Pour les malikites et nombre d'autres auteurs, <span class="bleu" style="font-weight:bold;">Al-Muwatta</span> compte parmi les <span class="bleu">Kutub al-Sittah</span>(les six livres les plus authentiques). Ainsi,  l'imam <span class="bleu" style="font-weight:bold">Ash-Shâfi</span> écrit au sujet de l’œuvre de l'Imam Mâlik :<br>
+					<span class="SUNNA" style="padding-left:0; display:inline">
+					  « L'ouvrage le plus authentique après le Livre de Dieu est le Muwatta de Malik » 
+					</span>
+					<p>
+					 Malik est Originaire du Yémen. Bien que son arrière-grand-père, <span class="referenceNom">Abu Amir</span>, s'installa à Médine deux ans après l'exil du Prophète &#65018;. 
+					</p> 
+					 Le grand-père de l'imam Malik est <span class="referenceNom">Malik ibn Abi Amir</span>. Celui-ci fut copiste du Coran et compte parmi les <span class="bleu" style="font-weight:bold">tabiûn</span><span class="referenceNom" style="font-weight:normal">(ces savants qui ont hérité d'enseignements directement de la part des compagnons du Prophète)</span>.<br><br>  
+					 <img src="img/imamMalik2.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					 En l'an 763, <span class="referenceNom">Djafar ibn Sulaymān</span>, alors gouverneur de Médine, sanctionna Malik à la flagellation, en raison d'une fatwa émise par l'imam qui contestait la licéité de l'allégeance envers le calife <span class="bleu">al-Mansur</span><sup><a href="https://fr.wikipedia.org/wiki/Al-Mansur_(Abbasside)" target="_blank"class="annotation">(2)</a></sup>( <span class="reference">le boureau de l'Imam Abou Hanifa . voir ci-haut</span> ). Les coups de fouet répétés ont causé la dislocation de l'épaule de l'imam Malik. Cette sentence a accru la popularité et le prestige de l'imam. On raconte que ses bras étaient devenus incapables de tenir sur sa poitrine ; ceci est une des raisons qu'avancent certains pour sa façon de prier pendant le qiyam. Mais la réalité est autre puisque le Sadl (prier avec les mains le long du corps dans le qiyam) est une sunna pour Mâlik et ses disciples qui fut héritée du Prophète de l'islam et des 4 Califes. <u>C'est pourquoi les malekite prient les mains allongées( et non croisées) en station debout</u>.<br><br>
+					
+					<img src="img/tombeMalik.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					L'imam forma de prestigieux disciples comme <span class="bleu">al-Shâfi</span>(le fondateur de la 2ème école - l'école chafi), <span class="bleu">Asad b. al-Furât</span>(le conquérant de la Sicile). Mais tous ses étudiants venaient à Medine. 
+					L'imam quittait rarement Medine, excepté pour accomplir le Hajj; d'où son surnom : <strong>"l'imam de Medine"</strong>. Malik  mourut dans cette ville et fut enterré au cimetière Al-Baqî de Médine. Son tombeau fut surmonté d'une coupole (kubba). Cette coupole sera détruite plus tard par les Saoudiens en 1802 en raison de l’interdiction, rapportée par plusieurs récits prophétiques, de construire sur les tombes, afin d’éviter toutes formes de polythéisme.<br><br>
+                    
+					
+					L'imam Malik eut de nombreux disciples dont les plus célèbres furent : 
+					<ul type="square" style="margin-top:0; margin-bottom:0;">
+						<li>Abd Ur Rahmân Ibn Al Qâssim</li>
+						<li>Abdullâh Ibn Wahb </li>
+						<li>Asad Ibn Furât Ibn Sinân</li>
+						<li><span class="bleu" style="font-weight:bold">Ach-Chafii</span>  fut son élève avant de fonder sa propre école</li>
+						
+					</ul>
+					On retrouve parmi ses ouvrages: 
+					<ul type="square" style="margin-top:0; margin-bottom:0;">
+						<li><span class="bleu" style="font-weight:bold">Al-Muwatta</span> (anglais)</li>
+						<li><span class="bleu" style="font-weight:bold">Tafsîr Gharîb</span> (interprétation du Coran)</li>
+						<li>Kitâb As-Surûr : Le livre de la félicité.</li>
+						<li>Livre des étoiles, du calcul du temps et des positions de la lune</li>
+						<li>Risâlah fil Aqdiyah : Traité sur les jugements.</li>
+						<li>Lettre à Ibn Wahb concernant la prédestination et la réfutation des qadarites.</li>
+						<li></li>
+						
+					</ul>
+					<span class="bleu" style="font-weight:bold">As Suyûtî</span><sup><a href="#a1" class="annotation">(3)</a></sup> rapporta que l'Imam <span class="referenceNom">Abdullâh Ibn Wahb</span> écrivit un livre exclusivement composé de paroles de l'Imâm Mâlik,  intitulé <span class="bleu">Kitâb Ul Mujâlasât 'An Mâlik</span>.<br><br>
+					L'Imam Malik meurt à Medine, en 796, à l'âge de 85 ans,<br> après une courte maladie . 
+                     <a href="https://fr.wikipedia.org/wiki/M%C3%A2lik_ibn_Anas" target="_blank"><img src="img/pageSuivant.png"   class="marfa3" /></a></i><br>					
+				</div>
+				<br><hr class="finExo" ><div class="entree titreExo" ></div>
+			</div>
+			<div class="coupeBloc">SEPARE LES BLOC</div>
+			<!-- Imam Chafi -->
+			<div id="chafi" class="contenu" style="margin-top:0; margin-bottom:0; padding:1em 0 0 0; ">
+				<hr style="width:80%; float:left; margin-left:10%; border-color:#558C89; border:none;">
+				<div class="entree titreFiche" ><h3 style="line-height:0; font-family:serif; font-style:italic"> Imam Shâfi'î</h3></div>
+			</div>
+			<div class="contenu" style=" padding-bottom:3em; margin-bottom:0; margin-top:0; padding-top:1em; ">
+				<div class="entree" style="padding:1em 2em" >
+					<img src="img/chafi2.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					Né à Gaza en Palestine, il fut un savant et un juriste. C'est le fondateur de l'école  de droit musulman(fiqh) <span class="bleu" style="font-weight:bold">chaféite</span>.  Aujourd'hui, cette jurisprudence(madhhab) reste prédominant au Yémen, en Afrique de l'Est, en Égypte, au Kurdistan, au Daghestan, au Kerala, en Asie du Sud-Est (Indonésie, Thaïlande, Philippines). C'est le madhhab d'État en Malaisie, aux Comores, à Brunei et dans la communauté javanaise du Surinam. 
+					C'est en Égypte qu'il rédigea son <span class="bleu" style="font-weight:bold">al-Madhhab al-Jadîd</span>(le nouveau madhhab), par opposition à <span class="bleu" style="font-weight:bold">al-Madhhab al-Qadîm</span>, l'ancien, qu'il avait transmis en Irak à ses étudiants dans un livre qu'il nomme <span class="bleu" style="font-weight:bold">Al-Umm</span>(Les bases).<br><br>
+                    <img src="img/chafi1.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					Dans sa jeunesse, il se rend à Médine pour étudier la jurisprudence islamique et le hadith sous la direction de l'imam Malik<sup><a href="#malik" class="annotation">(4)</a></sup>. Il y mémorisa complètement le livre <span class="bleu" style="font-weight:bold">Al-Muwatta</span> et pouvait le réciter de mémoire au mot près. Il séjourna dans la ville jusqu'à la mort de l’imam Malik en 801. Il s'en alla ensuite au Yémen pour y enseigner.
+					Il combina la jurisprudence du Hedjaz(<span class="bleu" style="font-weight:bold">malikite</span>) avec celle d'Irak (<span class="bleu" style="font-weight:bold">hanafite</span>) et fonda ainsi sa propre école de jurisprudence. Il rassembla les règles en dictant à ses élèves dans un livre nommé <span class="bleu" style="font-weight:bold">Al-Hujja</span>(l'évidence). Cette rédaction se fit en Irak en 810 et certains de ses élèves apprirent son livre et le propagèrent, tels que l'imam Ahmad bin Hanbal<sup><a href="#hanbal" class="annotation">(5)</a></sup> et Abu Thawr. <br><br>
+					<img src="img/chafi3.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					Bien que sa carrière se soit aussi déroulée dans le Hidjâz et à Baghdâd, c’est principalement à la fin de sa vie, à Fustât, en Égypte, que son enseignement fut le plus favorablement accueilli et qu’il eut le plus grand nombre de disciples ayant joué un rôle important dans la diffusion de sa doctrine.
+					Ses principaux élèves qui continuèrent son œuvre sont <span class="reference">al-Muzani</span> qui en rédige un abrégé, <span class="reference">Al-Maradi</span>, <span class="reference">Al-Buwayti</span>, <span class="reference">az-Zaʿfarânî</span> et <span class="reference">al-Karâbîsî</span>.
+					L'imam Chafi est le premier à avoir systématisé les principes fondamentaux de la jurisprudence islamique, comme dans son livre <span class="bleu" style="font-weight:bold">Ar-Risâlah</span>. À ce titre, il est considéré comme le fondateur des <span class="bleu" style="font-weight:bold">usul al-fiqh</span>(La science des fondements de la loi islamique à partir des sources du droit musulman).<br><br>
+					
+					
+					On retrouve parmi ses ouvrages: 
+					<ul type="square" style="margin-top:0; margin-bottom:0;">
+						<li><span class="bleu" style="font-weight:bold">Kitâb Al-Umm(Le livre exemplaire): </span> Ouvrage de jurisprudence islamique. Il y a noté ses opinions sur diverses questions, et y a rapporté des débats qu'il a eus avec d'autres oulémas, notamment hanafites et malékites.</li>
+						<li><span class="bleu" style="font-weight:bold">Risâlah fî Usûl Al-Fiqh(Épître sur les fondements du droit): </span>Ouvrage de principes fondamentaux de jurisprudence.</li>
+						<li>Ses exégèses de certains versets du Coran ont été rassemblés par le chaféiste <span class="bleu" style="font-weight:bold">Al-Bayhaqiy</span> dans un livre intitulé <span class="bleu" style="font-weight:bold">Ayat ul-Ahkam</span>.</li>
+					</ul>
+					Le 20 Janvier 820, l'Imam Shâfifi meurt à Fosta en Égypte,<br>  à l'âge de 53 ans. 
+                     <a href="https://fr.wikipedia.org/wiki/Ash-Sh%C3%A2fi'%C3%AE" target="_blank"><img src="img/pageSuivant.png"   class="marfa3" /></a></i><br>					
+				</div>
+				<br><hr class="finExo" ><div class="entree titreExo" ></div>
+			</div>
+			<div class="coupeBloc">SEPARE LES BLOC</div>
+			<!-- Imam Hanbal -->
+			<div id="hanbal" class="contenu" style="margin-top:0; margin-bottom:0; padding:1em 0 0 0; ">
+				<hr style="width:80%; float:left; margin-left:10%; border-color:#558C89; border:none;">
+				<div class="entree titreFiche" ><h3 style="line-height:0; font-family:serif; font-style:italic"> Imam Hanbal &ensp;ou&ensp; Imam Ahmad &ensp;(Ahmad ibn Hanbal)</h3></div>
+			</div>
+			<div class="contenu" style=" padding-bottom:3em; margin-bottom:0; margin-top:0; padding-top:1em; ">
+				<div class="entree" style="padding:1em 2em" >
+					<img src="img/hanbal.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					Né à Bagdad en Irak, il était juriste, théologien, ascète, traditionaliste (muhaddith), précurseur de l'une des quatre jurisprudences(madhhab) sunnite: <span class="bleu" style="font-weight:bold">L'école hanbalite</span>:  Elle compte parmi les quatre principales écoles de jurisprudence de l'islam sunnite<span class="reference">(madh'hab)</span>  avec  le <span class="bleu" style="font-weight:bold">shafî'îsme</span>, le <span class="bleu" style="font-weight:bold">malikise</span>,  et le <span class="bleu" style="font-weight:bold">hanafisme</span>.  L'école hanbalite  est la plus rigoriste et la plus austère. Elle préconise une interprétation littérale du Coran et de la sunna (la tradition). La forme la plus stricte du hanbalisme est <span class="bleu" style="font-weight:bol">le wahhabisme</span>, qui est au fondement de l'Arabie saoudite.  Aujourd'hui, le hanbalisme reste prédominant en Arabie séoudite et au Qatar.<br><br> 
+					Un érudit très influent et actif au cours de sa vie, Ibn Hanbal est devenu « une des figures intellectuelles les plus admirées » de l’histoire de l'islam.<br> Après avoir terminé ses études avec <span class="bleu">Abou Yoûsouf</span><sup><a href="#abouyoussoufHaut"  class="annotation">(6)</a></sup>, Ibn Hanbal a commencé à voyager à travers l’Iraq, la Syrie, l’Arabie et le Yémen pour recueillir des ahadith. l'imam a ainsi rassemblé l'une des plus importantes collections de ahadith sunnites : <span class="bleu" style="font-weight:bold"><u>Le Mousnad</u></span>, qui continue à ce jour d'exercer une influence considérable dans le domaine de l'étude du hadîth.<br><br>
+					
+					<img src="img/musnad.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					Dans cet ouvrage de référence, les ahâdîth sont classés en fonction de leur authenticité, suivant les chaînes de transmetteurs, remontant jusqu'aux <span style="color:green">swahaba</span>, selon ces trois catégories :<br>
+					&#128215; 1. L'authenticité parfaite<span class="reference">(sahîh)</span>;<br>
+					&#128215; 2. L'authenticité bonne<span class="reference">(hasan)</span>;<br>
+					&#128215; 3. L'authenticité faible<span class="reference">(da'îf</span>.<br>
+					Ibn Hanbal a également écrit des ouvrages sur la Tradition, sur les principes moraux , ainsi que des éloges des <span style="color:green">premiers califes rachidoune</span>(les bien guidés). On doit à son fils Abdullâh <span class="reference">(mort en 903)</span>, une compilation des réponses qu'il donnait aux questions qui lui étaient posées sur les sujets les plus divers.<br><br>  
+					Après plusieurs années de voyage, il est retourné à Bagdad pour étudier le droit musulman sous l'autorité d'l'imam-Shâfi. Avec cette connaissance, il est devenu une autorité dans le hadith. Il devient mufti dans sa vieillesse<br><br>
+				    
+					<img src="img/hanbal3.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					 Les Califes abbassides avaient réussi à faire passer le dogme du secte <span style="color:red">Mu’tazillite</span> pour doctrine officielle. Ils s’étaient mis en tête de traquer les réfractaires. Refusant un débat avec les inquisiteurs venus traiter de la nature d’Allah et du Coran, l'imam fut mis sous fers et envoyé au Calife: Sur le chemin, après avoir invoqué la protection d'Allãh &#65019;,  le Calife Al-Ma’mun mourut avant même que l'imam n’arrive. Le frère du calife défunt reprenant le pouvoir, s'acharne contre l'imam. Deux ans et demi durant, il fut battu et torturé afin qu’il abjure la croyance authentique. On le pendit pas les pieds, le flagellant jusqu’à en perdre connaissance. Sous la pression de ses élèves et juristes, il fini par être libéré mais, assigné à domicile.
+					<br><br>
+					Ahmad Ibn Hanbal est décédé le vendredi 2 août 855 à l’âge de 75 ans à Bagdad, en Irak, laissant derrière lui le Musnad, cet immense encyclopédie du hadith. Selon les historiens, 800 000 hommes et 60 000 femmes ont assisté à ses funérailles et 20 000 chrétiens et juifs se sont convertis à l’islam ce jour-là
+					
+					
+					<br><br>
+					Parmis ses autres ouvrages clés, on peut mentionner: 
+					<ul type="square" style="margin-top:0; margin-bottom:0;">
+						<li>As Sunnah</li>
+						<li>Az Zuhd(l’ascétisme)</li>
+						<li>Fada’il as Sahabah (le mérite des compagnons)</li>
+					</ul>
+					 Il est écrit que l'imam Hanbal est un martyr( mort pour sa foi)
+                     <a href="https://www.desdomesetdesminarets.fr/2017/05/03/biographie-de-limam-ahmad-ibn-hanbal/" target="_blank"><img src="img/pageSuivant.png"   class="marfa3" /></a></i><br>					
+				</div>
+				<br><hr class="finExo" ><div class="entree titreExo" ></div>
+			</div>
+			<div class="coupeBloc">SEPARE LES BLOC</div>
+			<!-- Bouhari -->
+			<div id="bouhari" class="contenu" style="margin-top:0; margin-bottom:0; padding:1em 0 0 0; ">
+				<hr style="width:80%; float:left; margin-left:10%; border-color:#558C89; border:none;">
+				<div class="entree titreFiche" ><h3 style="line-height:0; font-family:serif; font-style:italic"> Mouhammad al-Boukhârî &ensp;( Bouhari )</h3></div>
+			</div>
+			<div class="contenu" style=" padding-bottom:3em; margin-bottom:0; margin-top:0; padding-top:1em; ">
+				<div class="entree" style="padding:1em 2em" >
+					<img src="img/bouhari1.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					Boukhârî est né sous califat abbasside, le 20 juillet 810 à Boukhara. Une province perse du Khorassan qui se trouve aujourd'hui en Ouzbékistan.<br> Il écrit <span style="color:blue">TAREH KABIR</span>, à l'âge de 18 ans. C'est son 1er livre sur les compagnons du Prophète &#65018; et leurs successeurs. &Eacute;norme compilation. Près de 40.000 biographies,  où il y explique comment reconnaître les narrateurs de hadiths. Ce traité sur la bibliographie des rapporteurs, montre bien son génie et sa précocité. <br><br>Il part ensuite voyager à travers le Moyen-Orient(Damas, Le Caire, Bagdad, Kufah) à la recherche d'érudits capables de lui transmettre des hadiths du Prophète &#65018;. C'est ainsi qu'il rencontre son professeur, l'imam Hanbal. 
+					<p style="text-align:center"><img src="img/coran..png"/>&emsp;&emsp;<img src="img/coran..png"/>&emsp;&emsp;<img src="img/coran..png"/></p>
+					<p>Boukhârî compte parmi les grands noms de l'islam sunnite. Ce, notamment en raison de son ouvrage de compilation de hadiths:</p>
+					
+					<img src="img/bouhari1.2.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					<span class="bleu" style="font-weight:bold; color:blue;" id="reference1"><span style="color:black"> Le</span>  SAHIH BOUHARI</span>. C'est le livre de référence de la <span style="color:green">SUNNA(</span>la science du hadith<span style="color:green">)</span>. Il s'agit d'une compilation des actions et des enseignements oraux du prophète &#65018; .<br> Après le Coran, le <i>Sahih Bouhari</i> reste encore, le livre le plus authentique(sahih) de l'Islam. Il fut le premier recueil de hadîth composé avec une rigueur extrème et soumis à des critères d’authentification poussés. On y trouve près de 7275 hadiths authentiques.
+					
+					
+					<p style="text-align:center"><img src="img/coran..png"/>&emsp;&emsp;<img src="img/coran..png"/>&emsp;&emsp;<img src="img/coran..png"/></p>
+					<img src="img/bouhari2.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					Il écrira également d’autres livres tel que <span class="bleu">&#128215; Kitab-Ul-Zoafa</span> où il y décèle la fragilité de certaines traditions,<br><span class="bleu">&#128215; </span>Il y aura aussi <span class="bleu">Al-adab al-mufrad</span> un traité sur le bon comportement en islam, <br> <span class="bleu">&#128215; Al-du’afâ' us-saghîr</span>, une collection de hadiths faiblement authentiques(selon sa méthodologie). En effet, il a cadré <i style="font-family:serif; font-size:1.2em; font-weight:bold">un standard de normalisation</i> aux règles rigoureusement définies pour valider (ou pas) les hadith. C'est pourquoi le rapporteur du hadith fait objet d'études. Il en  fait un critère de validation primordial.
+					<p>
+					  De ce fait, comme si le <span class="bleu">Kitab-Ul-Zoafa</span> et les 12 volumes du TAREH KABIR ne suffisent plus, il redige quatre ouvrages de plus, consacrés à ce même sujet:<br>
+					  <span class="bleu">&#128215; Tawarih wa-l ansâb</span>(Traité sur certains rapporteurs de hadiths )<br>
+					  <span class="bleu">&#128215; Târikh fi ma'rifati Ruwad’il hadith</span>(Au sujet des rapporteurs)<br>
+					  <span class="bleu">&#128215; Kitab-ul-Kunni</span>(où il  compile les noms et statuts des narrateurs)<br>
+					  <span class="bleu" style="color:green">&#128215; TAREH SAHIR</span>(synthèse de <span class="bleu" style="color:green">TEREH KABIR</span>)<br>
+					</p>
+					<p style="text-align:center"><img src="img/coran..png"/>&emsp;&emsp;<img src="img/coran..png"/>&emsp;&emsp;<img src="img/coran..png"/></p>
+					Pour ses ouvrages hors de la SUNNA, on peut mentionner:
+					<ul type="none" style="margin:0 0 0 -3%;">
+						<li><small>&#128215; TAFSIR KABIR, <span style="color:blue"> Exégèse du Coran</span>(disparu)</small></li>
+						<li><small>&#128215; Le dogme musulman( <strong>العقيدة</strong> )</small></li>
+						<li><small>&#128215; Rafi yadayn fi salâh(La position des mains pendant la prière)</small></li>
+						<li><small>&#128215; Kitab qiraat khalf imam (La récitation derrière l’imam)</small></li>
+						<li><small>&#128215; Akhbârus sifat (traité sur les Qualités Divines)</small></li>
+						<li><small>&#128215; Khalq af’alil-'ibad wa’l raddu a’jahmiya(Réfutation aux <span style="color:red">Jahmites</span>).</small></li>
+					</ul>
+
+					
+				    <br><br>
+					<img src="img/bouhari3.png" width="200" height="200" align="left" style="padding-right:1em"/>
+		            Il fut l’exemple du dévot et du savant éprouvant une crainte révérencielle envers Allah. C’est l’homme aux prières nombreuses et au cœur recueilli et éveillé. Pendant le mois du ramadan, il récitait le Noble Coran en entier dans la journée, et un tiers du Coran avant l’aube tous les jours.
+					<span class="referenceNom">Al-Warrâq rapporte</span> :<br>« Pendant mes voyages avec Abû Abd Allâh(Bouhari), lorsque nous dormons dans la même maison, je le voyais se lever la nuit entre quinze et vingt fois. Chaque fois, il allumait sa lampe et il extrayait des hadîths en les annotant. Puis il s’allongeait de nouveau. &Agrave; l’approche de l’aube, il avait l’habitude de prier <i style="font-family:serif">30 rakaan [2 par 2]</i> et il ne me réveillait jamais. 
+					Je lui dis une fois : « Tu endures cela pour toi-même, pourquoi ne me réveilles-tu pas aussi [pour prier] ?<br> Il répondit : « Tu es un homme jeune et je n’aime pas troubler ton sommeil. ». »
+					<p>
+					  Cauchemar des coranistes, sommité scientifique pour les partisans de la Sunnah ; l’imam Al-Boukhari restera, l’un des personnages les plus brillants de la civilisation islamique. Puisse Allãh &#65019; le rétribuer de la meilleure des manières.
+					</p>
+					Il quittera ce monde le 29 Ramadhan 256<span class="reference">(1er septembre 870)</span>, <br> à l’âge de 62 ans. 
+                     <a href="https://www.desdomesetdesminarets.fr/2017/03/05/biographie-de-limam-al-boukhari/" target="_blank"><img src="img/pageSuivant.png"   class="marfa3" /></a></i><br>					
+				</div>
+				<br><hr class="finExo" ><div class="entree titreExo" ></div>
+			</div>
+			<div class="coupeBloc">SEPARE LES BLOC</div>
+			<!-- Muslim -->
+			<div id="muslim" class="contenu" style="margin-top:0; margin-bottom:0; padding:1em 0 0 0; ">
+				<hr style="width:80%; float:left; margin-left:10%; border-color:#558C89; border:none;">
+				<div class="entree titreFiche" ><h3 style="line-height:0; font-family:serif; font-style:italic"> Muslim ibn al-Hajjaj </h3></div>
+			</div>
+			<div class="contenu" style=" padding-bottom:3em; margin-bottom:0; margin-top:0; padding-top:1em; ">
+				<div class="entree" style="padding:1em 2em" >
+					<img src="img/muslim1.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					Né à Nichapur (Iran), Muslim est un auteur érudit, un Muhaddith(spécialiste de la vie et la parole du Prophète &#65018;).<br> Ses recherches et  publications restent connes et reconnues.<br> Historien renommé, c'est un des deux sommités incontournable de la <span style="color:green">SUNNA</span>: Avec son professeur, Mouhammad al-Boukhârî, il est considéré comme une référence dans le sunnisme et la science du hadith. Il a mis cette science en prorité dans sa quête de connaissances. Dans le but de préserver les Hadith, en plus de l'énoncé, il cherchait  <u>le contexte</u> et <u>la chaînes de transmetteurs</u>, afin d'en distinguer l’authentique du faible. &Agrave; cause de la dispersion des transmetteurs, il part voyager autour du Khorassan, en Irak, au Hidjaz, dans le Châm, et en Egypte.  <br><br>
+					<img src="img/muslim2.1.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					L’œuvre principale de Muslim est le <br>&#128215; <span style="color:blue">SAHIH MUSLIM</SPAN>.<br>
+                    Ce recueil constitue la deuxième source, la plus authentique, dans l’autorité sunnite, après le SAHIH  BOUKHARI<sup><a href="#reference1" class="annotation">&#9757;</a></sup>. Muslim précise que sur les 300000 hadiths qu'il rassembla en 15 années, il n'en considéra que 9 200 comme authentiques. Il les a donc  compilé en 54 chapitres. Le <i>SAHIH MUSLIM</i> est aussi appelé <span class="bleu">Musnadu Al-Sahihu</span>.<br> &Agrave; noter qu'il éxiste 6 collections<sup><a href="https://fr.wikipedia.org/wiki/Grands_recueils_de_hadiths" target="_blank" class="annotation">(11)</a></sup>, considérées comme les grands recueils de hadith de l'islam sunnite.<br><br>
+					Beaucoup de ses ouvrages ont sombré dans l’oubli:
+					<ul type="none" style="margin:0 0 0 -3%;">
+						<li><small>&#128215; Les sheikhs de l'imam Mâlik (<span class="reference">Mashâyikh Mâlik </span>) [perdu]),</small></li>
+						<li><small>&#128215; Les sheikhs d’Ath-Thawrî (<span class="reference">Mashâyikh Ath-Thawrî </span>) [perdu]),</small></li>
+						<li><small>&#128215; Les sheikhs de Shu`bah (<span class="reference">Mashâyikh Shu`bah </span>) [perdu]),</small></li>
+						<li><small>&#128215; Mention des Fils d’Al-Husayn (<span class="reference">Dhikr Awlâd Al-Husayn </span>) [perdu]),</small></li>
+						<li><small>&#128215; Al-Munfaridât wal-Wijdân [trouvable].</small></li>
+					</ul>
+                    <p>
+					  <img src="img/muslim2.2.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					  Mouslim partageait son temps entre l’enseignement et l’écriture. Tellement absorbé par son travail qu’il y passait ses nuits. Il nous a laissé une oeuvre incontournable. Notamment cette collection de 9 200 Hadith authentiques. Un travail complémentaire à son Maître: Tout commes les deux Djalaleynes, le prénom de Muslim reste à jamais lié à Bouhari, son professeur. On ne cite pas l'un sans l'autre. Prions qu’Allãh &#65019; &nbsp; lui accorde Sa miséricorde et Sa satisfaction. 
+					</p>
+					
+					 Il quittera ce monde une nuit du mois de Rajab<span class="reference">(06 Mai 875)</span>, <br> à l’âge de 54 ans. 
+                     <a href="https://islamhouse.com/fr/author/70848/" target="_blank"><img src="img/pageSuivant.png"   class="marfa3" /></a></i><br>					
+				
+				</div>
+				<br><hr class="finExo" ><div class="entree titreExo" ></div>
+			</div>
+			<div class="coupeBloc">SEPARE LES BLOC</div>
+			<!-- Ibn Majah -->
+			<div id="ibnMaja" class="contenu" style="margin-top:0; margin-bottom:0; padding:1em 0 0 0; ">
+				<hr style="width:80%; float:left; margin-left:10%; border-color:#558C89; border:none;">
+				<div class="entree titreFiche" ><h3 style="line-height:0; font-family:serif; font-style:italic"> Muslim ibn al-Hajjaj </h3></div>
+			</div>
+			<div class="contenu" style=" padding-bottom:3em; margin-bottom:0; margin-top:0; padding-top:1em; ">
+				<div class="entree" style="padding:1em 2em" >
+					<img src="img/ibnMaja.png" width="200" height="200" align="left" style="padding-right:1em"/>
+                    Deux siècles après l'hégire(an 209 H),<br> Ibn Mājah est né à Qazvin, dans l'actuelle Iran.<br> C'est un écrivain, un érudit. On ne connait de sa main que trois ouvrages dont un commentaire du Coran, appelé <br>&#128215; <i style="font-weight:bold">Kitab al-Tafsir(<small>Livre d'intérprétation</small>)</i>,<br>&#128215; <i style="font-weight:bold">Kitab al-Tareh(<small>Livre d'histoire</small>)</i>, où il dresse une liste plus ou moins exhaustive des transmetteurs apparaissant dans l’<strong>isnâd</strong>,  la chaîne des transmetteurs des hadiths. C'est l’histoire des musulmans, de l’époque des compagnons jusqu’à la sienne. 
+                    <p>
+					  Il semble que ces deux livres étaient remarquables. Malheureusement ils nous ont pas parvenus. Perdus depuis longtemps, c'est grâce à Al-Dhahabi<sup><a href="https://fr.wikipedia.org/wiki/Al-Dhahabi" target="_blank" style="text-decoration:none;" >&#128260;</a></sup> qu'on a eu connaissance de ces de ouvrages.  
+					  Al-Dhahabi les mentionna dans son livre <i>Tadhkirat al-huffaz</i>.
+                    </p>					
+					
+					<img src="img/sahihIbnMajaF.png" width="200" height="200" align="left" style="padding-right:1em"/>
+                     Parfois appelé SAHIH ibn MAJA, le<br>&#128215;<span style="font-weight;bold" class="textSource"> SUNANE IBN MAJA</span>(سنن ابن ماجه)<sup><a href="https://bibliotheque-islamique.fr/hadith/sommaire-sahih-ibn-majah/" target="_blank" style="text-decoration:none;">&#128260;</a></sup>,<br>
+					 reste le seul livre, et non le moindre, qui nous est parvenu d'ibn Maja.<br> C'est le dernier ouvrage à entrer dans le <br><i style="font-weight:bold">Kutub as-Sittah</i>: Le cercle des <i style="font-weight:bold">six grands livres de référence</i> du hadith de la Sunnah du Prophète &#65018; .<br> Il se compose de 37 Chapitres traitant de 4341 ahadith dont 1339 exclusif. C'est à dire que 30% des hadith du livre ne se trouvaient nul par ailleurs, même pas dans les grands livres de reference. C'est peut être la raison pourquoi il est admis dans ce cercle très fermé des Kutub as-Sittah. <i style="font-weight:bold">Check Al Albani</i><sup><a href="https://fr.wikipedia.org/wiki/Muhammad_Nasir-ud-Din_al-Albani#%C5%92uvres" target="_blank" style="text-decoration:none;">&#128260;</a></sup>
+					 en fait un "revu-corrigé" dans son livre <i class="referenceNom">Sahih wa Da'if Sunan ibn Majah</i>.
+					 <p>
+					    Le succès de ce livre n'a laissé personne indifférente. Le premier à l'introduire dans <i>"les 6 grands livres de reference"</i>, est <strong>Ibn Tahoural</strong>(auteur du livre : <span class="bleu">Condition d’acceptation dans les six livres</span>), le second est <strong>Al Maqdissi</strong><sup><a href="https://en.wikipedia.org/wiki/Abd_al-Ghani_al-Maqdisi" target="_blank" style="text-decoration:none;">&#128260;</a></sup> (auteur du célèbre livre : <span class="bleu">’Umdatou Al Ahkam</span>) et ensuite <strong>Al Bousiri</strong><sup><a href="https://fr.wikipedia.org/wiki/Bousiri" target="_blank" style="text-decoration:none;">&#128260;</a></sup>.
+					 </p>
+					
+					<p>
+					  D'office, Ibn Maja est admis parmi les célèbres auteurs des six livres de référence; après <span class="referenceNom">Bouhari</span>, <span class="referenceNom">Mouslim</span>, <span class="referenceNom">Abou Daoud</span>, <span class="referenceNom">Tirmidhi</span>, et <span class="referenceNom">An Nassaï</span>.<br>
+					  Ses Professeurs et ses élèves n’ont pas la notoriété de ceux de <span class="referenceNom">Bouhari</span> ou <span class="referenceNom">Mouslim</span> car Ibn Majah était moins connu que ces deux Imams. Cependant, il reste un grand savant digne de confiance. Ce, malgé la présence d'environ 1000 hadith faibles dans son ouvrage. Il a eu une reputation telle qu'<span class="referenceNom">ibn Kathir</span> a fai son éloge.  
+					</p>
+		
+					
+					 Il mourut dans les derniers jours du mois de Ramadan<span class="reference">(	28 février 886)</span>, <br> à l’âge de 62 ans. 
+                     <a href="http://www.pageshalal.fr/actualites/nos_heros_en_islam_limam_ibn_majah_-fr-11397.html" target="_blank"><img src="img/pageSuivant.png"   class="marfa3" /></a></i><br>					
+				
+				</div>
+				<br><hr class="finExo" ><div class="entree titreExo" ></div>
+			</div>
+			<div class="coupeBloc">SEPARE LES BLOC</div>
+			<!-- Nawawi -->
+			<div id="nawawi" class="contenu" style="margin-top:0; margin-bottom:0; padding:1em 0 0 0; ">
+				<hr style="width:80%; float:left; margin-left:10%; border-color:#558C89; border:none;">
+				<div class="entree titreFiche" ><h3 style="line-height:0; font-family:serif; font-style:italic"> Al-Nawawi </h3></div>
+			</div>
+			<div class="contenu" style=" padding-bottom:3em; margin-bottom:0; margin-top:0; padding-top:1em; ">
+				<div class="entree" style="padding:1em 2em" >
+					<img src="img/nawawi.png" width="200" height="200" align="left" style="padding-right:1em"/>
+                    Six siècles après l'hégire(an 631 H),<br> Yahya Ibn Sharaf An-Nawawi est né à Nawa, un sultanat mamelouk du Caire, situé au sud de la Syrie. Nawawi reste toujours un des savants les plus reconnu et apprécié de l’histoire. Juriste majeur de l’école shafeite, il est encore aujourd’hui lu d’un bout à l’autre du monde, notamment pour ses ouvrages traitant du hadith. Il est l’éditeur, le sélectionneur des avis et le réorganisateur de l’école juridique <span style="font-weight:bold">chaféite</span>. Il reste donc une grande figure de cette école.<br>
+					Nawawi mémorisa le Coran vers sa puberté, tout en apprenant le fiqh auprès des savants de son village. &Agrave l’âge de 18 ans, son père le ramène à Damas pousuivre ses études.  Cette ville étant à ce moment, le fief des Shaféites; il s'imprègne toute suite de la culture juridique chaféite. Il étudie les œuvres d’<strong>Al Ghazali</strong>, comme celles de <strong>Ar Razi</strong> et <strong>Ash Shirazi</strong>. Il apprend par cœur les recueils de hadiths de <strong>Muslim</strong>, <strong>Ahmad</strong> comme celui de <strong>Bouhari</strong>.
+					<p>
+					     <img src="img/mosqueeDamas.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					     Dans ses débuts à Damas, il commence par suivre l'enseignement de l’imam de la Grande Mosquée Omeyyade qui l'oriente vers le Muftī de Damas. Ce dernier le recommanda à <span class="referenceNom">al-Maġribī</span>, directeur de l’École <span style="font-weight:bold">Dar al Hadith al Asrafiyya</span>, qui lui accorde une chambre annexe à l’école. Nawawi trouve la tranquillité dans cette chambre où il réside jusqu’à sa mort.  Il y travailla comme enseignant et fut même désigné pour diriger l'établissement depuis 1266 (an 665 H).<br> École reconnue, il lui est alors versé un salaire qu’il se refuse à toucher, préférant sa vie d’ascète. Aussitôt après s'être installé dans sa nouvelle demeure, il mémorisa <br>&#9200;&#9829; le <strong class="bleu">« Tanbīh »</strong> en quatre mois et demi,<br>&#9200;&#9829;  ensuite, il s'attaque au <strong class="bleu">« al-Muhaḋḋab »</strong>, le fameux ouvrage de droit chaféite. Il mémorisa le quart de ce livre durant le reste cette même année.
+                    </p>
+					<p>
+					     <img src="img/jardinvertu.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					     À 30 ans seulement, il écrivait déjà ses premiers ouvrages. Entre autres, on peut citer parmi ses principaux livres, <br>
+						 &#128215;<span class="textSource"> Les 40 de Nawawi</span>,<br>
+						 &#128215;<span class="textSource"> Le jardin des vertueux</span>.<br>
+						 Toute deux traitant du hadith, c'est surtout pour ces deux œuvres que l’imam marquera l’histoire. Le premier titre sera traduit dans la plupart des langues parlées dans le monde musulman. En France, l’œuvre est connue sous le nom des 40 hadiths d’An Nawawi.<br> Le second titre est tout simplement l’un des recueils de hadiths les plus diffusés et étudiés. Très apprécié pour sa classification et son volume moins conséquent que les ouvrages de Muslim et Al Boukhari.
+					</p>
+					Parmis ses autres ouvrages, on peut mentionner: 
+					<ul type="square" style="margin-top:0; margin-bottom:0;">
+						<li>Ŝarh SAHIH MUSLIM: <span class="reference">Commentaire du Sahih Musli</span></li>
+						<li>Majmūᶜ Ŝarh Muhadhab: <span class="reference">Droit comparé entre les 4 écoles(inachevé)</span> </li>
+						<li>Minhāj Ṭālibīn: <span class="reference">Manuel principal de l’enseignement du droit shafiite. </span></li>
+						<li>Rawḍat al-Ṭālibīn: <span class="reference">ouvrage majestueux de fiqh shafiite</span></li>
+						<li>al-Aḋkār(Les invocations): </li>
+						<li style="italic; font-family:arial lighter;">...et beaucoup d’autres ouvrages:</li>
+					</ul>
+					<p style="margin-top:0;">
+					    L’<strong>imam Shâfi</strong> a compté dans son livre, <span class="bleu" style="font-weight:bold">Biographie de l’imam an-Nawawī</span>, plus que 50 ouvrages rédigés par Nawawi.
+                    </p>
+					<p>
+					<img src="img/nawawi2.png" width="200" height="200" align="left" style="padding-right:1em"/>
+                    Comme la plupart des savants shafeites de son temps, ses travaux laissent transparaître une adhésion à l’école de croyance <strong>asharite</strong>. Cependant, il restera dans les cercles savants les plus littéralistes(hostiles au kalam). Malgré sa courte durée de vie, Al-Nawawa s'inscrit à jamais parmi les vertueux les plus prolifiques et surtout bénéfiques. Il reste à jamais, connu et reconnu pour la magie sa plume. Une des plus grande références de son époque et de la nôtre.
+		            De toute sa vie, à l’instar d’autres grands savants musulmans, il ne se mariera jamais. Prenant l’habitude de dormir la tête sur ses livres dans une petite chambre accolée à l’école qui l’avait reçu à son arrivée à Damas, il mourra très jeune.
+					</p>
+					 Juste après un voyage de Jérusalem à Nawa, sa ville natale;<br>
+					 Al Nawawi mourut le	22 décembre 1278<span class="reference">( 5 cha'ban 677)</span>, <br> à l’âge de 45 ans. 
+                     <a href="https://fr.wikipedia.org/wiki/Al-Nawawi" target="_blank"><img src="img/pageSuivant.png"   class="marfa3" /></a></i><br>					
+				
+				</div>
+				<br><hr class="finExo" ><div class="entree titreExo" ></div>
+			</div>
+			<div class="coupeBloc">SEPARE LES BLOC</div>
+			<!-- Présentation de d'ibn Kathir -->
+			<div id="ibnKathir" class="contenu" style="margin-top:0; margin-bottom:0; padding:1em 0 0 0; ">
+				<hr style="width:80%; float:left; margin-left:10%; border-color:#558C89; border:none;">
+				<div class="entree titreFiche" ><h3 style="line-height:0; font-family:serif; font-style:italic"> Ibn Kathir </h3></div>
+			</div>
+			<div class="contenu" style=" padding-bottom:3em; margin-bottom:0; margin-top:0; padding-top:1em; ">
+				<div class="entree" style="padding:1em 2em" >
+					<img src="img/t1.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					Ibn Kathīr(ابن كثير) de son nom complet  Ismāel ibn Omar ibn Kathīr  est un juriste shâfi'ite, traditionniste et historien.
+					Il est né en <strong>1301</strong> à Bosra (sud de la Syrie) et mort le  1er février 1373  à Damas. Il y est enterré aux côtés de Ibn Taymiyyah dont il fut l'un des élèves, et qui était une haute figure de la doctrine du salaf.<br>
+					Il a étudié auprès d'<span style="font-weight:bold; color:blue;">Abu al Hajaj al Mizzi</span>, qui était son principal cheikh.
+					À la fin de ses études en 1341, sa première fonction officielle est de participer à une commission d'enquête chargée de trancher certain problèmes d'hérésies. Par la suite il occupe des fonctions plus ou moins officielles. En juin/juillet 1366 il devient professeur dans la grande mosquée de Damas. <br>
+					Ibn Kathîr est célèbre pour sa capacité à mémoriser les textes, il savait par cœur tout le Coran et un grand nombre de hadiths. Il est connu comme juge (cadi), comme historien. Bien qu'ayant étudié avec des hanbalites, Ibn Kathîr se réclame du chaféisme.
+					On trouve parmi ses oeuvres:
+					<ul type="square">
+						<li>Tafsir ibn Kathir (en)</li>
+						<li>Al Bidayah wa al-Nihayah (en) - (Le commencement et la fin ou Tarikh ibn Kathir (en))</li>
+						<li>Al-Sira Al-Nabawiyya (Ibn Kathir) (en)</li>
+						<li>Al-Baa'ith al-Hatheeth: un résumé de la science du hadith d'Ibn al-Salah (en)</li>
+						<li>Tabaqaat ah-Shafi'iah</li>
+						<li>Talkhis al-Istighatha</li>
+						<li>Les signes précurseurs de la fin des temps</li>
+						<li>Les péchés et leurs conséquences</li>
+						<li> Qasas al-Anbiya (traduit en français dans plusieurs maisons d'édition sous le nom d'Histoires des prophètes)</li> 
+					</ul>
+                     <a href="https://fr.wikipedia.org/wiki/Ibn_Kathir" target="_blank"><img src="img/pageSuivant.png"   class="marfa3" /></a><br>					
+				</div>
+				<br><hr class="finExo" ><div class="entree titreExo" ></div>
+			</div>
+			<div class="coupeBloc">SEPARE LES BLOC</div>
+			<!-- Présentation des djalaleyne) -->
+			<div id="a1" class="contenu"  style="margin-top:0; margin-bottom:0; padding:1em 0 0 0; ">	
+				<hr style="width:80%; float:left; margin-left:10%; border-color:#558C89; border:none;">
+				<div class="entree titreFiche" ><h3 style="line-height:0; font-family:serif; font-style:italic">Jalal Dine al-Mahallî <small style="color:gray; font-size:.9em;"> &ensp;et&ensp; </small>Jalâl Dine as-Suyûtî &nbsp; (<small style="color:gray; font-size:.9em;"> les djalaleyne </small>) </h3></div>
+			</div>		
+			<div class="contenu" style=" padding-bottom:3em; margin-bottom:0; margin-top:0; padding-top:1em;  ">
+				<div class="entree" style="padding:1em;">
+					<img src="img/t2.png" width="200" height="200" align="left" style="padding-right:1em"/>
+					Presque un siècle après Ibn Kathir; le Tafsîr Al Jalalayn: Littéralement «le commentaire des deux Jalâl». Un ouvrage exégèse du Coran, écrit par  deux savants.<br>  Il a été commencé en <strong>1459</strong> par <strong>Jalal Eddine al-Mahallî</strong> et achevé en <strong>1505</strong> par <strong>Jalâl Eddine as-Suyûtî</strong>. <br>
+					Ce tafsir se caractérise par sa simplicité et sa concision. Il se présente comme une explication des termes du Coran (Mufradât Al-Qur'ân) en 1285 pages. Ce, en deux tomes d’exégèse condensée. Il peut être livré en sept volumes par certains éditeurs.
+					<p>Un ouvrage considéré comme une première dans l’étude de la signification du Coran, il est un outil précieux apportant une meilleure compréhension du Saint Livre à travers le monde</p>
+					<p>Jallal Eddine Al-Mahallî a commencé le livre par le commentaires de la sourate 18 (al-Kahf) jusqu'à la cent-quatorzième et dernière sourate, an'Nâs(les hommes). Il est mort peu après avoir terminé de commenter la première sourate, al-Fâtiha. </p>
+					C'est alors que Jalâl Eddine as-Suyûtî a repris son travail et terminé le commentaire.
+					<!-- Ajouter ce lien quelque par pour le tafsir<a href="https://fr.wikipedia.org/wiki/Tafs%C3%AEr_Al_Jalalayn" target="_blank"><img src="img/pageSuivant.png"    class="marfa3"/></a>	 -->
+					<a href="https://fr.wikipedia.org/wiki/Al-Suy%C5%ABt%C4%AB" target="_blank"><img src="img/pageSuivant.png"    class="marfa3"/></a>	
+					  
+					 
+					<hr  class="separateur" style="margin-top:2em; margin-bottom:2em;">		
+				</div>
+				<br><hr class="finExo" ><div class="entree titreExo" ></div>
+			</div>
+			
+			<button onclick="topFunction()" id="myBtn" title="Go to top"  >
+				<img  src="img/top.JPG" id="imageToTop" style="padding:0; margin:0; ">
+			</button>
+			
+		</main>
+	</div><!-- #bigContenair -->
+	<div style="clear:both"></span>
+	<!--
+	<footer  style="position:static; bottom:0; ">
+			 <small style="color:#c4c4c4;"><span style="color:gray;"><i>2022</i> &copy; -</span> <i>Commentaires du Coran</i></small>
+		     <img src="../img/coran..png"    class="marfa3"/>
+	</footer>
+	-->
+	<div class="conteneur-reponses"></div> <!-- séparateur -->
+	<footer style="position:static; bottom:0;  " > 
+	    <div class="content-footer"  >  
+            <div class="ndreda-footer" > 
+				<!-- animation du footer -->
+				<div style="position: relative; top:0; right:auto; width:auto;">		
+					<div class="wrapper" style=" ">
+						<div class="obj"></div>
+						<div class="obj"></div>
+					</div>
+				</div>	
+		        <!-- contenu du footer -->
+				<div id="ndreda-footerG">
+					<ul type="square" style="color:#ccc">
+						<li><i><small style="color:gray;"> ...</small></i> </li>
+						<li><i><small style="color:gray;"> ...<small style="color:#ff531a;"> ...</small></small></i> </li>
+						<li><i><small style="color:gray;"> ...<small style="color:#f44336;"> ...</small></small></i> </li>
+					</ul>
+				</div>
+				<div id="ndreda-footerD" style="margin:0 auto; 4.4% auto; color:#ccc;" >
+				  	<ul type="square">
+						<li><i><small style="color:gray;"> ...</small></i> </li>
+						<li><i><small style="color:gray;"> ...<small style="color:#ff531a;"> ...</small></small></i> </li>
+						<li><i><small style="color:gray;"> ...<small style="color:#f44336;"> ...</small></small></i> </li>
+					</ul>
+
+                </div>
+			</div>		
+			 <small class="copyright_"><span style="color:gray;">2022 &copy; -</span> <i style="color:#555">Commentaires du Coran</i></small> 
+             <img src="img/coran..png"  class="marfa3"/>
+		</div>	  
+    </footer>
+	<script type="text/javascript" src="js/top.js"></script>
+	<script type="text/javascript" src="js/bibliographieIndexIndex.js"></script>
+		<script type="text/javascript" src="js/portfolio_overlay.js"></script> 
+		<script>
+			document.getElementById("dropdown-btn").style.display="none";
+			function responsiveTopnav() {
+			  document.getElementById("dropdown-btn").style.display="block";
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+	    </script>
+</body>
+</html>
+		
+
+
+
+
+

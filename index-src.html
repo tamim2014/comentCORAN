@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="shortcut icon" href="favicon.ico"  />
+	 <link rel="stylesheet" href="css/style.css" />
+	 <link rel="stylesheet" href="css/top.css"  media="screen">
+	 <link rel="stylesheet" href="css/listExegese.css"  media="screen">
+	 <link rel="stylesheet" href="css/footer.css" ><!-- footer ndreda -->
+	 <link rel="stylesheet" href="css/responsiveTopnav.css" >
+</head>
+<style>
+	  hr.separateur {
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+		width:70%;
+	  }
+
+	 /* Volet gauche */
+	 
+	.resume{
+		   width:auto ;/* width:39.39%;  */
+	       margin:2% 0 2% 4.4%; 
+		   padding:1.2em;  
+
+		   line-height:1.5; 
+		   transform:none; /* transform: skewY(-5deg); */
+		   border-radius: 4px 0 0 4px; 
+		    
+			background: #f7f7f9; 
+		    border-bottom:none !important;
+		   	box-shadow:
+			0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+			0px 2px 2px 0px rgba(255, 255, 255, .255);
+	}
+	
+	
+    /* Volet droit*/
+	
+	.resume ~ .resume { 
+	    margin:2% auto 2% 0; 
+        transform:none; /* transform: skewY(5deg); */
+        border-radius: 0 4px 4px 0; 
+	}
+	/* ---------------------------------------------
+	 * TASK: Urgent
+	 *   Corriger la règle responsive time car
+	 *   coté gauche: OK
+	 *   coté droite: KO
+	*/
+	
+	
+	@media screen and (max-width: 600px) {
+	  .row {display:block !important;}
+	  .resume{  float:left; margin:2% .3% 2% 4.4% !important; border-radius:0; }
+	  .resume ~ .resume { margin:2% .3% 4% 4.4% !important;  border-radius:0;}
+	}
+	
+	
+	/* Media queries - Responsive timeline on screens less than 600px wide */
+	@media screen and (max-width: 600px) {
+	  /* Place the timelime to the left */
+	  .timeline::after {
+	     left: 31px;
+	  }
+	  
+	  /* Full-width containers */
+	  .container {
+		  width: 100%;
+		  padding-left: 70px;
+		  padding-right: 25px;
+	  }
+	  
+	  /* Make sure that all arrows are pointing leftwards */
+	  .container::before {
+		  left: 60px !importan;
+		  border: medium solid white;
+		  border-width: 10px 10px 10px 0;
+		  border-color: transparent white transparent transparent;
+	  }
+
+	  /* Make sure all circles are at the same spot */
+	  .left::after, .right::after {
+	  left: 15px ;
+	  }
+	  
+	  /* Make all right containers behave like the left ones */
+	  .right {
+	     left: 0% !important; 
+	  }
+	  /* réajustement hors de l'atelier-web3: i y a un truc qui cloche à droite ( à revoir plus tard) */
+	  
+	   .left { left: 25% !important; width:82.5% !important; }
+	   .left::after { left: -60px !important; }
+
+	}
+	
+	@media screen and (max-width: 600px) {
+		.row { margin:0 !important; }
+		.resume  {margin:auto 1.5em ;  padding-left:.3em; padding-right:.3em; width:91.5%; }
+		.resume{margin-top:1.5em !important;}
+	    .resume~.resume{ margin-top:1.5em !important;}
+		 #bordTimeline {margin:auto; width:91.5%; } 
+	}
+	
+	
+
+</style>
+<body onmouseover="playVid();" onmouseenter="playVid();" >
+	<div class="topnav" id="myTopnav"  >
+	    <a class="active" href="#" >Accueil</a>
+	    <a href="coment1/index.html">Commentaires(Tafsir) d'Ibn Kathir</a>
+	    <a href="coment2/index.html" target="_blank">Commentaires(Tafsir) Djalalein</a>    
+	    <!-- <a href="sujet/sujet.php"> &Eacutenonc&eacute; </a> -->
+	    <div class="dropdown">
+			<button class="dropdown-btn" id="dropdown-btn" style="color:transparent;" > Bibliographie </button>
+			<div class="dropdown-content" style="max-height:30em; overflow-y: hidden;">
+				<a href="bibliographieIndex.html" >Bibliographie</a>								
+			</div>
+	    </div>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveTopnav()">&#9776;</a>
+	</div>
+	<main >
+		
+		<div class="row" style="margin-left:6.3%; margin-right:9.7%;  display: flex; ">
+			<div class="resume" style="flex: 1;    margin-right:.5em; ">
+				<h3 style="margin-top:0;"> Tafsîr Ibn Kathîr <small style="font-size:.5em; color:red;">(Task: parler du livre - pas de l'auteur)</small> </h3>
+				<p style=" line-height:1.5; padding:.3em 0;">
+					<img src="img/t1.png" width="170" height="170" align="left" style="padding-right:1em"/>
+				    Ibn Kathīr(ابن كثير) de son nom complet  Ismāel ibn Omar ibn Kathīr  est un juriste shâfi'ite, traditionniste et historien.
+					Il est né en <strong>1301</strong> à Bosra (sud de la Syrie) et mort le  1er février 1373  à Damas. Il y est enterré aux côtés de Ibn Taymiyyah dont il fut l'un des élèves, et qui était une haute figure de la doctrine du salaf.<br>
+					Il a étudié auprès d'<span style="color:blue; font-weight:bold;">Abu al Hajaj al Mizzi</span>, qui était son principal cheikh.
+					À la fin de ses études en 1341, sa première fonction officielle est de participer à une commission d'enquête chargée de trancher certain problèmes d'hérésies. Par la suite il occupe des fonctions plus ou moins officielles. En juin/juillet 1366 il devient professeur dans la grande mosquée de Damas. <br>
+					Ibn Kathîr est célèbre pour sa capacité à mémoriser les textes, il savait par cœur tout le Coran et un grand nombre de hadiths. Il est connu comme juge (cadi), comme historien. Bien qu'ayant étudié avec des hanbalites, Ibn Kathîr se réclame du chaféisme.
+
+                    <br><a href="coment1/index.html"><img src="img/pageSuivant.png"   class="marfa3" /></a>					
+				</p>
+			</div>			
+			<div class="resume" style="flex: 1;    margin-left:.5em;">
+				<h3 style="margin-top:0;"> Tafsîr Al Jalalayn <span class="reference" style="font-size:.8em;">(Commentaire des deux Jalâl)</span> </h3>
+				<p style="line-height:1.5;  padding:.3em 0;">
+					<img src="img/t2.png" width="170" height="170" align="left" style="padding-right:1em"/>
+					Un siècle après Ibn Kathir, le Tafsîr Al Jalalayn. Exégèse du Coran, écrit par  deux savants.<br> Commencé en <strong>1459</strong> par <strong>Jalal Eddine al-Mahallî</strong>, il est achevé en <strong>1505</strong> par <strong>Jalâl Eddine as-Suyûtî</strong>. <br>
+					Simple et concis, il explique les termes du Coran(Mufradât Al-Qur'ân) en 1285 pages. Ce, en deux tomes d’exégèse condensée. 
+					<p>Considéré comme une première dans l’étude de la signification du Coran, l'ouvrage est un outil précieux apportant une meilleure compréhension du Saint Livre à travers le monde</p>
+					<p>Jallal Eddine Al-Mahallî a commencé le livre par le commentaires de la Sourate18(al-Kahf) jusqu'à la dernière Sourate(la Sourate114 - les hommes). Il est mort peu après avoir terminé de commenter la première sourate, al-Fâtiha. </p>
+					C'est alors que Jalâl Eddine as-Suyûtî a repris son travail et terminé le commentaire.
+					<br><a href="coment2/index.html"><img src="img/pageSuivant.png"    class="marfa3"/></a>							 
+				</p>
+			</div>
+        </div>
+        <div style="clear:both"></span>		
+		<!-- </div> -->
+
+
+		<!-- List exegeses  -->
+		<div class="contenu" id="-listResponsive" style="margin-top:1em; margin-bottom:0; padding:1em 0 0 0; ">	
+			<hr style="width:80.1%; border-color:#558C89; float:left; margin-left:9.9%; ">
+			<div class="entree titreFiche "><h3><i> Liste exégèses <small class="referenceNom" style="color:#ccc">( non exhaustive )</small></i></h3> </button></div>
+		</div>
+		<div class="contenu" id="bordTimeline" style=" padding-bottom:3em; margin-bottom:1em; margin-top:0; padding-top:1em;  ">
+			<div class="entree" id="timelineContainer" style="padding:1em 2em;  " >
+				<div class="timeline">
+				  <div class="container left" >
+					<div class="content">
+					  <h2>(~700)</h2>
+					  <p>
+					     <span class="exegeseNom">Tanwir al-Miqbas:</span>
+					     <ul class="SUNNA" style="margin-bottom:.3em;">
+						    <li>Auteur: <span class="reference"><span class="referenceNom" style=" font-family:Calibri; color:black">Ibn Abbas</span><sup ><a href="bibliographie.html#abass" target="_blank" class="annotation"> (1)</a></sup></span></li>
+						    <li>Titre: <span class="reference bleu125">«Tafsir Ibn Abbas»</span></li>
+
+						 </ul>
+						 <span class="reference" style="font-size:.7em">Recueillie par <i style="color:black; ">Fairuzabadi(1329-1414) </i>, <br> mais qui contient beaucoup de contenu atypique pour un tafsir de sahabah(compagnon)</span>
+					  </p>
+					</div>
+				  </div>
+				  <div class="container right">
+					<div class="content">
+					  <h2>(700~767)</h2>
+					  <p>
+					      <span class="exegeseNom" >Tafsîr As Samarqandî:</span>
+						  <ul class="SUNNA " >
+						    <li>Auteur: <span class="reference">Abu Hanifa</span></li>
+						    <li>Titre: <span class="reference bleu125">L'océan des sciences<br>&emsp;&emsp;&ensp;( بحرالعلوم )</span></li>
+						    <li>Jurisprudence: <span class="reference">Hanafite</span></li>
+						    <li>Croyance: <span class="reference"> Maturidite</span></li>
+						 </ul>
+					 </p>
+					</div>
+				  </div>
+				  <div class="container left">
+					<div class="content">
+					  <h2>(~896)</h2>
+					  <p>
+					     <span class="exegeseNom">Tafsîr At Tabarî:</span>
+						 <span class="SUNNA" style="margin-bottom:.3em;">
+						    Le meilleur <i style="font-weight:bold">tafsir</i>* des Sunnites.<br> 
+							Une traduction des sept premières sourates faite par: <span style="font-weight:bold">Pierre Godé</span> et imprimée en 1985 existe aux Éditions d'art les heures claires.  
+					     </span>
+						 <span class="reference" style="font-size:.7em; color:black;"><i style="font-weight:bold">tafsir*</i>: c.à.d Traité de jurisprudence et d'exégèse  </span>
+					  </p>
+					</div>
+				  </div>
+				  <div class="container right">
+					<div class="content">
+					  <h2>(1074-1143)</h2>
+					  <p>
+					     <span class="exegeseNom">Tafsîr Al Zamakhchari:</span>
+					     <span class="SUNNA">
+						    Un des tafsirs les plus proches du texte coranique.<br>
+							Cheih Zamakchari est  Moatazilite
+					     </span>
+					 </p>
+					</div>
+				  </div>
+				  <div class="container left">
+					<div class="content">
+					  <h2>(1150-1209)</h2>
+					  <p>
+					     <span class="exegeseNom">Tafsîr Ul Kabîr:</span>
+					     <ul class="SUNNA" style="margin-bottom:.3em;" >
+						    <li>Auteur: <span class="reference">Fakh Dîne ar-Râzî</span></li>
+						    <li>Titre: <span class="reference bleu125">Clef pour l'invisible</span></li>
+						    <li>Jurisprudence: <span class="reference">Sunnite</span></li>
+						    <li>Croyance: <span class="reference"> Acharite</span></li>
+						 </ul>
+						 <span class="reference" style="color:black;">
+						  Surnommé <span class="bleu125">Tafsîr'L'Kabîr(la plus grande exégèse)</span> à cause de sa taille volumineuse et de sa richesse d'enseignements.
+						 </span>
+					  </p>
+					
+					</div>
+				  </div>
+				  <div class="container right">
+					<div class="content">
+					  <h2>(1214-1273)</h2>
+					  <p>
+					     <span class="exegeseNom">Tafsîr Al Qurtubî: </span>
+						 <ul class="SUNNA" style="margin-bottom:.3em;" >
+						    <li>Auteur: <span class="reference">Muhammad Al Qurtubî </span></li>
+						    <li>Titre: <span class="reference bleu125">Tafsir al-Jami<br>&emsp;&emsp;&ensp;( الجامع لأحكام القرآن )</span></li>
+						    <li>Jurisprudence: <span class="reference">Malikite</span></li>
+						    <li>Croyance: <span class="reference"> Acharite</span></li>
+						 </ul>
+						 <span class="reference" style="color:black;">
+						  L'auteur, Muhammad Al Qurtubî Al Ansârî est un savant célèbre, originaire de Cordoue(Espagne). 
+						 </span>
+					 </p>
+					</div>
+				  </div>
+				  <div class="container left">
+					<div class="content">
+					  <h2>( ? - 1286)</h2>
+					  <p>
+					      <span class="exegeseNom">Tafsîr Al Baydâwî: </span>
+						  <ul class="SUNNA" style="margin-bottom:.3em; margin-left:-.5em;" >
+						    <li>Titre: <span class="reference bleu125">Lumières de la déduction et arcanes de l'interprétation</span></li>
+						    <li>Titre: <span class="reference bleu125" style="font-family:Amiri;"> أنوار التنزيل وأسرار التأويل </span></li>
+						    <li>Titre: <span class="reference" style="font-size:.8em"> Anwar Tanzil wa Asrar Tawil </span></li>
+						 </ul>
+					  </p>
+					</div>
+				  </div>
+				  <div class="container right t7">
+					<div class="content" id="t7" >
+					  <h2>(1301)</h2>
+					  <p>
+					     <span class="exegeseNom">Tafsîr Ibn Kathîr:</span>  
+						 <ul class="SUNNA" style="margin-bottom:.3em; margin-left:-.5em;" >
+						    <li>Titre: <span class="reference bleu125">Explication du noble Coran</span></li>
+						    <li>Titre: <span class="reference bleu125">تفسير القرآن العظيم</span></li>
+						    <li>Titre: <span class="reference">Tafsîr Ul Qur°ân Ul 'Azîm </span></li>
+						 </ul>
+					   </p>
+					</div>
+				  </div>
+				  <div class="container left">
+					<div class="content">
+					  <h2>(1396-1453)</h2>
+					  <p>
+					     <span class="exegeseNom">Tafsîr Az Zaouaoui:</span>
+						 <ul class="SUNNA" style="margin-bottom:.3em;" >
+						    <li>Auteur: <span class="reference">Sidi Brahim Boushaki </span></li>
+						    <li>Jurisprudence: <span class="reference">Malikite</span></li>
+						 </ul>
+					  </p>
+					</div>
+				  </div>
+				  <div class="container right t10"  >
+					<div class="content" id="t10" >
+					  <h2>(~1500)</h2>
+					  <p>
+						   <span class="exegeseNom">Tafsîr Al Jalalayn:</span>
+						   <span class="SUNNA">					   
+							  &Eacute;crit par <span class="referenceNom">Jalal Dine Suyuti</span> et  son professeur, <span class="referenceNom">Jalal Dine Mahali</span>.<br>
+							  D'où son nom Al Jalalayn, signifiant les 2 Jalâl.
+						   </span>
+					  </p>
+					</div>
+				  </div>
+				</div>			
+			</div>
+			<div class="entree ficheCaptionBas" id="ficheCaptionBas" style="border:none; font-family:serif; " ><i> Dix exégèses(entre le 7<sup>e</sup> et le 15<sup>e</sup> <span id="siecle">siècle</span>)  </i></div><br><hr class="finExo" ><div class="entree titreExo" ></div>
+		</div><!-- fin liste exegese -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top"  >
+			<img  src="img/top.JPG" id="imageToTop" style="padding:0; margin:0; ">
+		</button>
+			<div class="conteneur-reponses"></div> <!-- séparateur -->
+			<footer style="position:static; bottom:0;  " > 
+				<div class="content-footer"  >  
+					<div class="ndreda-footer" style="padding:0;" > 
+						<!-- animation du footer -->
+						<div style="position: relative; top:0; right:auto; width:auto;">		
+							<div class="wrapper" style=" ">
+								<div class="obj"></div>
+								<div class="obj"></div>
+							</div>
+						</div>	
+						<!-- contenu du footer -->
+
+						<div id="ndreda-footerG" style="width:100%;" >
+							<div style="height:8em;">
+								<video  id="myVideo"  class="img footer-image"     style="margin:0; height:100%; width:100%; border-radius:10px;">
+										 <source src="img/univers.mp4" type="video/mp4" />			       
+								</video>
+							</div>
+						</div>
+					</div>		
+					 <small class="copyright_"><span style="color:gray;">2022 &copy; -</span> <i style="color:#555">Commentaires du Coran</i></small> 
+					 <img src="img/coran..png"    class="marfa3"/>
+				</div>	  
+			</footer>
+    </main>
+	<script type="text/javascript" src="js/top.js"></script>
+	<script>
+	    document.getElementById("dropdown-btn").style.display="none";
+		function responsiveTopnav() {
+		  document.getElementById("dropdown-btn").style.display="block";
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
+		// lancer en mode muet à l'ouverture de la page
+		var vid = document.getElementById("myVideo"); 
+		function playVid() { 
+		  vid.play();
+          vid.volume = 0.1;		  
+		} 
+	</script>
+</body>
+</html>
+		
+
+
+
+
+

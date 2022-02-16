@@ -1,0 +1,113 @@
+	 
+        /* Harmoniser le hover du dropdown-btn (seulement pour la page bibiliographieIndex.html) */
+        .topnav .dropdown .dropdown-btn:hover { background-color: #474e5d;   color:#cca !important;  padding-bottom: 28px ; }
+		
+		/* décale le circle à gauche pour le rentrer dans le cadre */
+		 .container::after { right: -5px !important;}
+		
+	    /* Une marge en bas */
+		 #bigContenair { margin-bottom:2em;}
+	    /*
+		 *
+		 * portfolio_overlay
+		 *
+		 */
+		 
+		/*###  * { box-sizing: border-box; } ceci affecte une mage pour toute la page web ###*/
+		
+		 /* Center website */
+		.main {
+		  max-width: 1000px;
+		  margin: auto;
+		}
+
+		h1 {
+		  font-size: 50px;
+		  word-break: break-all;
+		}
+
+		.row {
+		  margin: 10px -16px;
+		}
+
+		/* Add padding BETWEEN each column */
+		.row,
+		.row > .column {
+		  padding: 8px;
+		}
+
+		/* Create three equal columns that floats next to each other */
+		.column {
+		  float: left;
+		  width: 25%;  /* APPLIQUER UNE REGLE RESPONSIVE POUR CE PARAMETTRE : Car le format du portfolio(3 ou 4 colonne se reglara ici) width: X%;  */  
+		  display: none; /* Hide all elements by default */
+		  
+		}
+
+		/* Clear floats after rows */ 
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		/* Content */
+		.content {
+		  background-color: white;
+		  padding: 10px;
+		}
+
+		/* The "show" class is added to the filtered elements */
+		.show {
+		  display: block;
+		}
+
+		/* Style the buttons */
+		.btn {
+		  border: none;
+		  outline: none;
+		  padding: 12px 16px;
+		  background-color: white !important;
+		  cursor: pointer;
+		}
+
+		.btn:hover {
+		  background-color: #ddd !important;
+		}
+
+		.btn.active_ {
+		  background-color: #666 !important;
+		  color: white;
+		}
+		/*********************   Image Overlay Slide ************/
+		.container { position: relative; width: 100%; } 
+		.overlay {
+		  position:absolute; left:0; right:0;  bottom:100%;
+		  width: 100%; height:0;
+		  transition: .5s ease; background-color:#558c89; 
+		  overflow: hidden;
+		  border-radius:inherit;
+		}
+		.container:hover .overlay { bottom:0; height:100%;  }
+		.image {  display:block; width:100%; height:200px !important; }
+		.text {
+		  color: white; font-size: .7em; text-align: left; 
+		  position: absolute; top: 40%; left:50%;  /* position: absolute; top: 50%; left: 50%; */
+		  width:100%; padding-left:0;
+		  -webkit-transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  transform: translate(-50%, -50%);
+		}
+		h5 {margin-top:25%; margin-bottom:5%;}
+		.text h2  { padding-left:.7em; }
+		.text p { padding: 1em; }
+		.text ul { padding-left:2em; padding-bottom:.5em; margin-bottom:0;  list-style:square;}
+		.text ul li { padding-bottom:1em;}
+		.text ul li b{  color:inherit !important; } /* chercher un color plus approprié que ça ! */
+		/* link */
+		.lien { float:right; padding:0 1em 0 .5em; text-decoration:none; font-size:2em;}
+
+		/* !!!!!!!!!!!!!! specifique à cette page: index_bibliographie.html( ne pas importer dans /css ) !!!!!!!!!! */
+		b {display:inline !important; }
+
+	 

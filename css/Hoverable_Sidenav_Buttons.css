@@ -1,0 +1,104 @@
+/* 
+ * Hoverable Sidenav Buttons
+
+ */
+    body {
+		/* Attention!!!!!!!!!!!!!!
+		 * Si on met les boutons à gauche ce oveflow n'est pas nécessaire
+		 * Si on met les boutons à droite ce overflow est indispensable
+		 * pour éviter le débordement de la page
+		 */
+		overflow-x: hidden !important;
+	}
+	#mySidenav a {
+	  position: fixed; /* absolute; */
+	  right: -188px; /* sort les boutons */
+	  transition: 0.3s; /* vitesse de sortie */
+	  /* padding: 15px => opérer ici pour modifier la taille des bouton */
+	  padding: 5px 15px;  
+	  width: 200px;
+	  text-decoration: none;
+	  font-size: 20px;
+	  color: white;
+	  border-radius: 5px 0 0 5px;	  
+	}
+
+	#mySidenav a:hover {
+	  right: 0; /* cache(retrait) les boutons */
+	}
+	/* cacher le 2 premier boutons( pour + de visibilité) et le montrer seulement quant il sort */
+	#mySidenav a#bouton1:hover {
+	  right: 0; /* cache(retrait) les boutons */
+	  background-color:#74AFAD; 
+	}
+	#mySidenav a#bouton2:hover {
+	  right: 0; /* cache(retrait) les boutons */
+	  background-color:#777 ;
+	}
+	
+    /* Manipuler les top pour modifier la séparation des bouton(  + ou - la même valeur sur tous les bouton ) */
+	#bouton1 {
+	  top:35px; /* 15px; */
+	  background-color: transparent;
+	}
+    /* à partir d'ici on incremente à 40px */
+	#bouton2 {
+	  top:75px; /* 55px; */
+	  background-color:transparent ;
+	}
+
+	#bouton3 {
+	  top: 115px; /* 95px; */
+	  background-color: #33A198;
+	}
+
+	#bouton4 {
+	  top:155px; /* 135px; */
+	  background-color: #4CAF50;
+	}
+	#bouton5 {
+	  top: 195px; /*175px; */
+	  background-color:#71B1BD; /* #787; */
+	}
+	#bouton6 {
+	  top: 235px; /* 215px; */
+	  background-color:#5F9EA0; /* cadetBlu */
+	}
+	#bouton7 {
+	  top: 275px; /* 255px; */
+	  background-color:#787; /*#80d0d0; Bleu givré */
+	}
+	#bouton8 {
+	  top: 315px; /* 295px;*/
+	  background-color:#789;  /* #26c4ec; bleu celeste */
+	}
+	#bouton9 {
+	  top: 355px; /* 335px; */
+	  background-color:#067790; /* Bleu Paon */
+	}
+	#bouton10 {
+	  top: 395px; /* 375px; */
+	  background-color:#008080;/*Bleu Sarcelle  */ /* #789; */
+	}
+	#bouton11 {
+	  top: 435px; /* 415px; */
+	  background-color:#1d4851; /* Bleu Pétrol */
+	}
+	#bouton12 {
+	  top: 475px; /* 455px; */
+	  background-color:#24445c; /* Bleu de Prusse */
+	}
+	#bouton1, #bouton2, #bouton3, #bouton4, #bouton5, #bouton6, #bouton7, #bouton8, #bouton9, #bouton10, #bouton311, #bouton12 {z-index:99999 !important;}
+   /* UTILISER LES NUANCES DU BLEU POUR LE RESTE( on ajoute 60px à chaque fois) 
+    *
+	* #71B1BD;
+	* #008080; Bleu Sarcelle
+	* #81D8D0; Bleu Tiffany
+    * #6600FF; Bleu Persan
+	* #067790; Bleu Paon
+	* #1d4851; Bleu Pétrol
+	* #048b9a; Bleu canard
+	* #bbd2e1; Bleu givré 
+   */
+   
+   /* TASK : trop long pour petit écran=> appliquer un responsive pour incrementer à 20 px
