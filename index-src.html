@@ -102,8 +102,16 @@
 		.resume{margin-top:1.5em !important;}
 	    .resume~.resume{ margin-top:1.5em !important;}
 		 #bordTimeline {margin:auto; width:91.5%; } 
+		 
+		 .ndreda-footer { /*  chrome veut un  width:40% (mais pas de prefixe webkit pour spcifier le width  */}
 	}
 	
+	@media screen  and (min-width: 601px) { 
+	    .ndreda-footer{width:19.7% !important;}
+		#contenairVideo{height:7em !important; padding:0 !important; }
+		
+	}
+
 	
 
 </style>
@@ -310,7 +318,7 @@
 			<div class="conteneur-reponses"></div> <!-- séparateur -->
 			<footer style="position:static; bottom:0;  " > 
 				<div class="content-footer"  >  
-					<div class="ndreda-footer" style="padding:0;" > 
+				     <div class="ndreda-footer" style="padding:0;" >  
 						<!-- animation du footer -->
 						<div style="position: relative; top:0; right:auto; width:auto;">		
 							<div class="wrapper" style=" ">
@@ -319,11 +327,10 @@
 							</div>
 						</div>	
 						<!-- contenu du footer -->
-
 						<div id="ndreda-footerG" style="width:100%;" >
-							<div style="height:8em;">
-								<video  id="myVideo"  class="img footer-image"     style="margin:0; height:100%; width:100%; border-radius:10px;">
-										 <source src="img/univers.mp4" type="video/mp4" />			       
+							<div id="contenairVideo"style="height:8em;">
+								<video  id="myVideo"  class="img footer-image"     style="margin:0; padding:0; height:100%; width:100%; border-radius:10px;"> 
+								     <source src="img/univers.mp4" type="video/mp4" />			       
 								</video>
 							</div>
 						</div>
@@ -349,7 +356,7 @@
 		var vid = document.getElementById("myVideo"); 
 		function playVid() { 
 		  vid.play();
-          vid.volume = 0.1;		  
+          vid.volume = 0.0;		  
 		} 
 	</script>
 </body>

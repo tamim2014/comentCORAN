@@ -2,6 +2,14 @@
 
 		filterSelection("all")
 		function filterSelection(c) {
+
+		  // affiche la div.galerieTafsir : caché à la ligne3 ( galerieTafsir.css)
+		  var y;
+		  y = document.getElementById("galerieTafsir");
+          y.style.display = "block";
+		  
+		  
+		  // affiche la div.column : caché à la ligne3 ( galerieTafsir.css)
 		  var x, i;
 		  x = document.getElementsByClassName("column");
 		  if (c == "all") c = "";
@@ -9,6 +17,8 @@
 			w3RemoveClass(x[i], "show");
 			if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
 		  }
+
+
 		}
 
 		function w3AddClass(element, name) {

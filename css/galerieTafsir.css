@@ -1,0 +1,31 @@
+
+   
+	.galerieTafsir, .column { display:none ; } /* on les cache au départ */
+	.show { display: block; } /* le div.column s'affiche en fonction du btn acrivé ( voir portfolio_overlay.js ligne18) */
+
+
+	/* Clear floats after rows */ 
+	.galerieTafsir:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Content */
+	.content { 
+	    background-color: background:#558C89;
+		padding: 50px 20px 80px 20px;
+	}
+
+	/* Style the buttons */
+	.nav a { cursor: pointer; }
+	.nav a:hover { background-color: #ddd; }
+	.nav a.active { background-color: #666; color: white; }
+	
+	/* limiter la hauteur de la gallerie */ /*ajouter un scroll caché: au cas où un contenu interessant s'impose */ 
+	.column .content  .entree { max-height:25em ; overflow-y:scroll; scrollbar-width: none; }
+
+
+
+
+
