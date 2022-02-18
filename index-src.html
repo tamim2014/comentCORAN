@@ -8,7 +8,9 @@
 	 <link rel="stylesheet" href="css/listExegese.css"  media="screen">
 	 <link rel="stylesheet" href="css/footer.css" ><!-- footer ndreda -->
 	 <link rel="stylesheet" href="css/responsiveTopnav.css" >
-</head>
+	 <link rel="stylesheet" href="css/pagination.css" >
+	 <link rel="stylesheet" href="css/galerieTafsir.css" >
+
 <style>
 	  hr.separateur {
 		border: 0;
@@ -111,11 +113,22 @@
 		#contenairVideo{height:7em !important; padding:0 !important; }
 		
 	}
-
 	
+	/* Efface le relief des 2 tafsir du haut de page */
+   .resume{box-shadow:none;}
+   
+    /* width responsive */
+	@media screen and (max-width: 600px) {
+	   .galerieTafsir{ width:90.65% !important;  margin:.5em auto !important;} 
+	   .column  { width:100%; padding:0; margin-left:0;} 
+	   .column  .content .entree { width:100%; padding-right:0;} 
+	}
 
 </style>
-<body onmouseover="playVid();" onmouseenter="playVid();" >
+</head>
+
+
+<body onmouseover="playVid();" onmouseenter="playVid();" onload="filterSelection('rien'); playVid();" >
 	<div class="topnav" id="myTopnav"  >
 	    <a class="active" href="#" >Accueil</a>
 	    <a href="coment1/index.html">Commentaires(Tafsir) d'Ibn Kathir</a>
@@ -167,14 +180,15 @@
 			<hr style="width:80.1%; border-color:#558C89; float:left; margin-left:9.9%; ">
 			<div class="entree titreFiche "><h3><i> Liste exégèses <small class="referenceNom" style="color:#ccc">( non exhaustive )</small></i></h3> </button></div>
 		</div>
+		<!-- time line -->
 		<div class="contenu" id="bordTimeline" style=" padding-bottom:3em; margin-bottom:1em; margin-top:0; padding-top:1em;  ">
 			<div class="entree" id="timelineContainer" style="padding:1em 2em;  " >
 				<div class="timeline">
-				  <div class="container left" >
+				  <div class="container left" id="tanwir" >
 					<div class="content">
 					  <h2>(~700)</h2>
 					  <p>
-					     <span class="exegeseNom">Tanwir al-Miqbas:</span>
+					     <span class="exegeseNom" >Tanwir al-Miqbas:</span>
 					     <ul class="SUNNA" style="margin-bottom:.3em;">
 						    <li>Auteur: <span class="reference"><span class="referenceNom" style=" font-family:Calibri; color:black">Ibn Abbas</span><sup ><a href="bibliographie.html#abass" target="_blank" class="annotation"> (1)</a></sup></span></li>
 						    <li>Titre: <span class="reference bleu125">«Tafsir Ibn Abbas»</span></li>
@@ -308,10 +322,167 @@
 					  </p>
 					</div>
 				  </div>
-				</div>			
+				</div>
+                <!-- GALLERIE DES TAFSIR -->
+			
+                <!-- fin GALLERIE DES TAFSIR -->				
 			</div>
+			
 			<div class="entree ficheCaptionBas" id="ficheCaptionBas" style="border:none; font-family:serif; " ><i> Dix exégèses(entre le 7<sup>e</sup> et le 15<sup>e</sup> <span id="siecle">siècle</span>)  </i></div><br><hr class="finExo" ><div class="entree titreExo" ></div>
 		</div><!-- fin liste exegese -->
+		
+
+	<!-- Portfolio Gallery Grid -->
+	<div class="galerieTafsir" id="galerieTafsir" style="width:80%; margin:1% auto 1.5% auto; background:#558C89;  ">
+		  <div class="column ibnAbas">
+			<div class="content" style="padding-bottom:3.5em;">
+			    <div class="entree"  style="padding:1em 2em; " >
+				     <h3 style="margin-top:0;"> Tafsir Ibn Abbas <span class="reference" style="font-size:.8em;">( Tanwir al-Miqbas: ~700 )</span> </h3>
+					 
+					 <p style="line-height:1.5;  padding:.3em 0;">
+					     
+						<img src="img/tanwir.png" width="170" height="170" align="left" style="padding-right:1em"/>
+						 Le Tanwir est attribué à Abd-Allah <span class="referenceNom" style=" font-family:Calibri;">Ibn Abbas</span><sup><a href="../comentCORAN/bibliographie.html#abass" target="_blank" class="annotation"> (1)</a></sup>. 
+						 Cependant, il contient beaucoup de contenu atypique pour un tafsir du sahabah (compagnon du Prophète &#65018;).  Il aurait été recueilli par Abu Tahir ( 1329–1414 ).<br>
+						 De nombreux chercheurs ont précisé que ce travail n'est pas authentiquement attribué à Ibn Abbas.<br>
+						 Les traducteurs de l'ouvrage en anglais<sup><a href="https://openmaktaba.com/tafseer-ibn-abbas/" target="_blank" class="annotation">&#128260;</a></sup> 
+						 ont détaillé dans leur introduction à l'ouvrage : &laquo; Il ne fait aucun doute que ce commentaire n'est pas l'œuvre d'Ibn 'Abbas. La chaîne des émetteurs de ce commentaire remonte à <span class="bleu">Muhammad Ibn Marwan</span> &raquo; .
+						 <p>
+						   Quant on demande qui est Marwan, voici ce que retourne le moteur de recherche:
+						   " Marwan(mort vers 719-720) est un officier de l'armée. C'est un prince Omeyyade, fils du calife Marwān Ier et d'une esclave ... etc".<br>
+						 </p>
+						 Surprenant. C'est le moins qu'on puisse dire quant on s'attend à une chaîne de transmission qui tient la route. 
+						 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumLorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumLorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumLorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumLorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+						<br><a href="#tanwir"><img src="img/pageSuivant.png"    class="marfa3"/></a>							 
+					 </p>
+			    </div>				
+			</div>
+		  </div>
+		  
+
+		  
+		  <div class="column abuhanifa">
+			<div class="content" style="padding-bottom:3.5em;">
+			    <div class="entree"  style="padding:1em 2em;" >
+				
+				            <h3 style="margin-top:0;"> Tafsir as' Samarkandi <span class="reference" style="font-size:.8em;">( Imam Abu Hanifa: 700~767)</span> </h3>
+							<img src="img/tafsirSamarkandi.png" width="170" height="170" align="left" style="padding-right:1em"/>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+
+			    </div>			  
+			</div>
+		  </div>
+		  
+		 
+		  <div class="column tabari">
+			<div class="content" style="padding-bottom:3.5em;">
+			    <div class="entree"  style="padding:1em 2em;" >
+				            <h3 style="margin-top:0;"> Tafsir At Tabarî <span class="reference" style="font-size:.8em;">( ~896 : جامع البيان )</span> </h3>
+							<img src="img/tafsirTabari.png" width="170" height="170" align="left" style="padding-right:1em"/>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+			    </div>			  
+			</div>
+		  </div>
+		  <div class="column Zamakhchari">
+			<div class="content" style="padding-bottom:3.5em;">
+			    <div class="entree"  style="padding:1em 2em;" >
+                    444
+			    </div>			  
+			</div>
+		  </div>
+		  <div class="column ar-Râzî">
+			<div class="content" style="padding-bottom:3.5em;">
+			    <div class="entree"  style="padding:1em 2em;" >
+                    555
+			    </div>			  
+			</div>
+		  </div>
+		  <div class="column qurtubi">
+			<div class="content" style="padding-bottom:3.5em;">
+			    <div class="entree"  style="padding:1em 2em;" >
+				            <h3 style="margin-top:0;"> Tafsir Kabir <span class="reference" style="font-size:.8em;">( Clef pour l'invisible )</span> </h3>
+							<img src="img/tafsirKabir.png" width="170" height="170" align="left" style="padding-right:1em"/>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+							<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+			    </div>			  
+			</div>
+		  </div>
+		  <div class="column baydawi">
+			<div class="content" style="padding-bottom:3.5em;">
+			    <div class="entree"  style="padding:1em 2em;" >
+                    777
+			    </div>			  
+			</div>
+		  </div>
+		  <div class="column zawawi">
+			<div class="content" style="padding-bottom:3.5em;">
+			    <div class="entree"  style="padding:1em 2em;" >
+                    88
+			    </div>			  
+			</div>
+		  </div>
+		  
+		  
+
+	<!-- END GRID -->
+	</div><!-- .galerieTafsir -->
+
+	<div class="tabcontent" style=" margin-top:1em; margin-bottom:1em; " >
+		  <section class="containerPagination"  > 
+			<nav class="pagination"  >
+			  <a class="prev">&laquo;</a>
+			  <a onclick="filterSelection('ibnAbas')"  >1</a>
+			  <a onclick="filterSelection('abuhanifa')">2</a> 
+			  <a onclick="filterSelection('tabari')" >3</a>
+			  <a onclick="filterSelection('Zamakhchari')">4</a>
+			  <span>5</span>
+			  <a class="next">&raquo;</a>
+			</nav>
+			<nav class="pagination pagination-blue">
+			  <a class="prev">&laquo;</a>
+			  <a onclick="filterSelection('ar-Râzî')"  >1</a>
+			  <a onclick="filterSelection('qurtubi')"  >2</a>
+			  <a onclick="filterSelection('baydawi')"  >3</a>
+			  <span>4</span>
+			  <a onclick="filterSelection('zawawi')"  >5</a>
+			  <a  class="next">&raquo;</a>
+			</nav>
+		  </section>
+	</div>		
+		<!--  fin PAGINATION  -->
+		
 		<button onclick="topFunction()" id="myBtn" title="Go to top"  >
 			<img  src="img/top.JPG" id="imageToTop" style="padding:0; margin:0; ">
 		</button>
@@ -341,24 +512,18 @@
 			</footer>
     </main>
 	<script type="text/javascript" src="js/top.js"></script>
+	<script type="text/javascript" src="js/portfolio_overlay.js"></script>
+	<script type="text/javascript" src="js/responsiveTopnav.js"></script>
 	<script>
-	    document.getElementById("dropdown-btn").style.display="none";
-		function responsiveTopnav() {
-		  document.getElementById("dropdown-btn").style.display="block";
-		  var x = document.getElementById("myTopnav");
-		  if (x.className === "topnav") {
-			x.className += " responsive";
-		  } else {
-			x.className = "topnav";
-		  }
-		}
-		// lancer en mode muet à l'ouverture de la page
+		/* lancer en mode muet à l'ouverture de la page */
+		
 		var vid = document.getElementById("myVideo"); 
 		function playVid() { 
 		  vid.play();
           vid.volume = 0.0;		  
-		} 
-	</script>
+		}
+       		
+	</script>	
 </body>
 </html>
 		

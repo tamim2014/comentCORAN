@@ -4,9 +4,10 @@
 		function filterSelection(c) {
 
 		  // affiche la div.galerieTafsir : caché à la ligne3 ( galerieTafsir.css)
-		  var y;
-		  y = document.getElementById("galerieTafsir");
-          y.style.display = "block";
+		 
+		  var y = document.getElementById("galerieTafsir");
+		  
+          if(y) { y.style.display = "block"; } /* pourkoi le if(y) ?  sinon bug dans "bibliographir.html" car le varible "y" n'existe pas dans cette page. */ 
 		  
 		  
 		  // affiche la div.column : caché à la ligne3 ( galerieTafsir.css)
