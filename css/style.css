@@ -393,7 +393,7 @@ hr.bIsm:after {
 	background:white;
 }
 /* Hadith rapporté du Prophète - PAIX DE DIRU A LUI - */
-.SUNNA, .reference, .referenceNom, b, .bleu  {
+.SUNNA, .reference, .titreTafsirArabe, .referenceNom, b, .bleu  {
 	font-style:italic;
 	font-family:Serif;
 	font-size:1.07em;
@@ -401,8 +401,9 @@ hr.bIsm:after {
 	margin-top:0; padding-top:0;
 	display:block;
 }
-.reference, .referenceNom{ font-weight:normal;  font-size:.9em; display:inline; color:gray; padding-left:0;}
+.reference, .referenceNom, .titreTafsirArabe { font-weight:normal;  font-size:.9em; display:inline; color:gray; padding-left:0;}
 .referenceNom{font-size:1em; font-weight:bold;}
+.titreTafsirArabe { font-size:.8em; float:right; padding-top:.3em; color:#115; }
 /* Citation du coran */
 b , .bleu {
 	color:#579;/* color:#457; ou gray */ 
